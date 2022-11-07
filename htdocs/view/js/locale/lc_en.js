@@ -1,0 +1,51 @@
+var _lc = new Array();
+
+/** 공통 사용  */
+_lc['alert'] = new Array();
+_lc['alert']['입력한비밀번호가서로다릅니다'] = 'The password you entered is different.';
+_lc['alert']['서명을해주세요'] = 'please sign';
+_lc['alert']['연락처를정확하게입력해주세요'] = 'Please enter your mobile phone number correctly.';
+_lc['alert']['인증번호를발송하였습니다'] = 'A verification code has been sent.';
+_lc['alert']['인증번호를정확하게입력해주세요'] = 'Please enter the verification code correctly.';
+_lc['alert']['ID를정확하게입력해주세요'] = 'Please enter your ID correctly.';
+_lc['alert']['인증번호유효시간이종료되었습니다'] = 'The validity period of the verification code has expired.';
+_lc['alert']['연락처인증을받으신후시도해주십시오'] = 'Please try after verifying your phone number.';
+_lc['alert']['회원가입하였습니다로그인해주십시오'] = 'You have registered as a member.\n\nPlease log in.';
+_lc['alert']['기존신분증을삭제하신후시도해주십시오'] = '기존 신분증을 삭제하신 후 시도해 주십시오.';
+_lc['alert']['기존기초안전보건교육증을삭제하신후시도해주십시오'] = '기존 기초안전보건교육증을 삭제하신 후 시도해 주십시오.';
+_lc['alert']['기초안전보건교육증이수일자를선택하세요'] = '기초안전보건교육증 이수일자를 선택하세요.';
+_lc['alert']['작성할안전문서가없습니다'] = '작성할 안전문서가 없습니다.';
+_lc['alert']['서명을로드하지못했습니다'] = '서명을 로드하지 못했습니다.';
+_lc['alert']['기초안전보건테스트점수를정확하게입력하세요'] = '기초안전보건 테스트 점수를 정확하게 입력하세요.';
+
+_lc['confirm'] = new Array();
+_lc['confirm']['로그아웃'] = 'Are you sure you want to sign out?';
+
+_lc['txt'] = new Array();
+_lc['txt']['재요청'] = 'Re-Request';
+_lc['txt']['인증완료'] = 'Verification completed';
+_lc['txt']['슈퍼관리자'] = 'SUPER ADMIN';
+_lc['txt']['호스트관리자'] = 'HOST ADMIN';
+_lc['txt']['일반관리자'] = 'BASIC ADMIN';
+_lc['txt']['근로자'] = 'WORKER';
+_lc['txt']['현장코드'] = 'Site Code';
+_lc['txt']['발주처'] = 'Owner';
+_lc['txt']['시공사'] = 'Contractor';
+_lc['txt']['소속업체'] = '소속업체';
+_lc['txt']['작성'] = 'Write';
+_lc['txt']['미작성'] = 'Unwritten';
+_lc['txt']['질의응답'] = 'Q&A';
+_lc['txt']['동의서'] = 'Consent';
+_lc['txt']['기초테스트'] = 'Test';
+_lc['txt']['유형'] = 'Type';
+_lc['txt']['작성현황'] = 'Write Status';
+_lc['txt']['입력하세요'] = 'Required.';
+_lc['txt']['데이터가없습니다'] = 'No data.';
+_lc['txt']['교육종류'] = '교육종류';
+_lc['txt']['교육일'] = '교육일';
+_lc['txt']['교육인원'] = '교육인원';
+_lc['txt']['명'] = '명';
+_lc['txt']['장비종류'] = '장비종류';
+_lc['txt']['발급년월일'] = '발급년월일';
+_lc['txt']['자격증명'] = '자격증 명';
+_lc['txt']['협력사'] = 'partners';

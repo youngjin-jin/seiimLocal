@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'ChosunSm';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.1/ChosunSm.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button, input{
+    font-size: 18px;line-height: normal;font-family: auto;;
+}
+.ql-editor > p{line-height: 3;}
+
+        .box{}
+		.box .row{display: flex;}
+		.box.type1 .row{    margin-top: 9px;padding-left: 157px;}
+		.box.type1 .name{width:310px;text-align: right;padding-right: 102px;position: relative;font-size: 20px;font-weight: 600;}
+		.box.type1 .name img{height:100px;position: absolute;right: 0;top: -33px;}
+		.box.type1 .birth{margin-left: 180px;width:265px;text-align: center;font-weight: 600;}
+		.box.type1 .type{width:310px;text-align: center;padding-right: 0px;font-weight: 600;}
+		.box.type1 .com{margin-left: 180px;width:265px;text-align: center;}
+		.box.type1 .tdate{width:152px;text-align: center;padding-right: 0px;font-weight: 600;}
+		.box.type1 .ttime{margin-left: 163px;width:160px;text-align: center;}
+		.box.type1 .tteach{margin-left: 115px;width:173px;text-align: center;margin-top:2px;}
+		.box.type1 .add{}
+		.box.type1 .tel{margin-left: 213px;width:210px;text-align: center;}
+		.box.type2{margin-top:84px;padding-left: 124px;;}
+		.box.type2 .equipbox{width:114px; height:95px;position: relative;}
+		.box.type2 .equipbox .date{position: absolute;top:3px;left:3px;font-size: 15px;}
+		.box.type2 .equipbox .circle{border:1px solid #000;border-radius: 100%;width:40px;height:24px;;position: absolute;right:0;top:26px;}
+		.box.type2 .equipbox .sign{margin-top:52px;text-align: center;}
+		.box.type2 .equipbox .sign img{height:120px;bottom:37px; position: relative;display: inline-block;}
+		.box.type3{margin-top:378px;padding-left: 0px;;}
+		.box.type3 .row{margin-left: 173px;}
+		.box.type3 .test1{width:220px;text-align: center;padding-top:11px;font-size: 26px;}
+		.box.type3 .test2{width:240px;text-align: center;padding-top:11px;font-size: 26px;}
+		.box.type3 .subbox{margin-top: 83px;position: relative;height: 75px;}
+		.box.type3 .temp{position: absolute;top:0;left:77px;}
+		.box.type3 .date{position: absolute;top:1px;right:33px;}
+		.box.type3 .name{position: absolute;bottom:24px;right:190px;}
+		.box.type3 .name img{height:140px;display: inline-block;position: absolute;right: -195px;bottom: -71px;max-width: none;}
+        
+        .circletype{position: relative;font-size: 0;}
+        .circletype span{position: absolute;display: inline-block;width:28px;height:28px; border:2px solid #000;border-radius: 100%;;}
+        
+        .box.type4{margin-top:49px;padding-left: 145px;}
+        .box.type4 .btype{position: relative;height:30px;}
+        .box.type4 .btype span{position: absolute;}
+        .box.type4 .btype .A{left:74px;}
+        .box.type4 .btype .B{left:274px;}
+        .box.type4 .btype .O{left:474px;}
+        .box.type4 .btype .AB{left:674px;}
+        .box.type4 .health1{padding-top: 10px;padding-left: 110px;}
+        .box.type4 .health1 .Y{left:110px}
+        .box.type4 .health1 .N{left:145px;}
+        .box.type4 .health2{padding-top: 10px;}
+        .box.type4 .health2 .H{left:115px}
+        .box.type4 .health2 .M{left:155px}
+        .box.type4 .health2 .L{left:195px}
+        
+        .box.type4 .subbox{position: relative;}
+        .box.type4 .subbox .Y{left:103px;}
+        .box.type4 .subbox .N{left:150px;}
+        .box.type4 .subbox .dname{position: absolute;left:360px;font-size: 18px;top:5px;font-size: 15px;}
+        .box.type4 .subbox .sign{position: absolute;right:12px;top:-23px;}
+        .box.type4 .subbox .sign img {height: 80px;}
+        .box.type4 .subbox .smoke{position: absolute;left:103px;top:0px;font-size: 20px;font-weight: 600;}
+        .box.type4 .subbox .drink{position: absolute;left:355px;top:0px;font-size: 20px;font-weight: 600;}
+        .box.type4 .subbox .sleep{position: absolute;left:638px;top:0px;font-size: 20px;font-weight: 600;}
+        .box.type4 .year{width:50%;text-align: center;padding-top:17px;}
+        .box.type4 .telfam{padding-left:100px;}
+        .box.type4 .telfam > span{display: block;margin-top:10px;}
+
+
+        .p2.chk1.Y{position: absolute;right:355px; top:782px;}
+        .p2.chk1.N{position: absolute;right:127px; top:782px;}
+        .p2.chk2.Y{position: absolute;right:355px; top:802px;}
+        .p2.chk2.N{position: absolute;right:127px; top:802px;}
+        .p2.chk3.Y{position: absolute;right:355px; top:822px;}
+        .p2.chk3.N{position: absolute;right:127px; top:822px;}        
+        .p2.chk4.Y{position: absolute;right:350px; top:1026px;}
+        .p2.chk4.N{position: absolute;right:127px; top:1026px;}
+        .p2.date{position: absolute;right:80px; top:1313px;font-size: 17px;font-family: "ChosunSm";font-weight: 600;letter-spacing: 2px;color: #000;}
+        .p2.name{position: absolute;right:248px; top:1343px;font-weight: 600;font-size: 20px;;}
+        .p2.name img{height:110px;position: absolute;right: -175px;bottom:-45px;max-width: none;;}
+
+        .p3 .row{display: flex;align-items: center;font-size: 22px;}
+        .p3 .row .name{margin-left: 150px;width:300px;;text-align: center;font-size: 24px;}
+        .p3 .row .birth{margin-left: 190px;width:300px;text-align: center;font-size: 24px;}
+        .p3 .row .nation{margin-left: 190px;width:480px;position: relative;height:40px;}
+        .p3 .row .nation .chk1{position: absolute;left:3px;top:5px}
+        .p3 .row .nation .chk2{position: absolute;left:142px;top:5px}
+        .p3 .row .nation .namenation{position: absolute;left:342px;top:5px}
+        .p3 .row .birth{margin-left: 190px;width:300px;text-align: center;}
+        .p3 .row .job{margin-left: 170px;}
+        .p3 .addr{margin-left: 150px;width:100%;;text-align: center;font-size: 21px;}
+        .p3 .mtel{margin-left: 220px;width:50%;;text-align: center;font-size: 22px;}
+        .p3 .ftel{margin-left: 150px;width:50%;;text-align: center;font-size: 22px;}
+        .p3 .sdate{font-size: 25px;width:448px;padding-left: 200px;font-family: "ChosunSm";font-weight: 600;letter-spacing: 2px;color: #000;}
+        .p3 .sname{font-size: 25px;width:448px;padding-left: 110px;}
+        .p3 .sname img{height:170px;display: inline-block;position: absolute;bottom: -91px;right: 111px;max-width: none;}
+        
+        .p4.sdate{font-size: 25px;position: absolute;bottom:333px; left:40%;font-family: "ChosunSm";font-weight: 600;letter-spacing: 2px;color: #000;}
+        .p4.include{font-size: 25px;position: absolute;bottom:238px; right:148px;}
+        .p4.sname{font-size: 25px;position: absolute;bottom:193px; right:183px;}
+        .p4.sname img{height: 170px;display: block;vertical-align: middle;margin-left: 10px;position: absolute;width: auto;bottom: -86px;right: -171px;max-width: none;}
+
+        .p6.sdate{font-size: 25px;position: absolute;bottom:279px; left:40%;font-family: "ChosunSm";font-weight: 600;letter-spacing: 2px;color: #000;}
+        .p6.include{font-size: 25px;position: absolute;bottom:182px; right:120px;}
+        .p6.sname{font-size: 25px;position: absolute;bottom:140px; right:183px;}
+        .p6.sname img{height: 170px;display: block;vertical-align: middle;margin-left: 10px;position: absolute;width: auto;bottom: -86px;right: -171px;max-width: none;}
+
+        .p7{}
+        .p7 .sdate{padding-right: 30px;margin-bottom: 20px;display: inline-block;}
+        .p7 .row{width:100%;margin-left: 188px;height: 37px;}
+        .p7 .name{width:274px;text-align: left;padding-left: 25px;position: relative;padding-top: 3px;;}
+        .p7 .name img{height:50px;display: inline-block;position: absolute;right:51px;bottom:-5px;}
+        .p7 .age{width:274px;text-align: left;margin-left: 180px;padding-left: 65px;}
+        .p7 .sex{width:274px;text-align: right;padding-right: 30px;position: relative;}
+        .p7 .sex .chk1{position: absolute;left:27px;top:4px;}
+        .p7 .sex .chk2{position: absolute;left:100px;top:4px;}
+        .p7 .exp{width:274px;text-align: left;padding-right: 30px;position: relative;margin-left: 180px;}
+        .p7 .exp .year{margin-left: 30px;}
+        .p7 .exp .month{margin-left: 50px;}
+        .p7 .lc{width:274px;text-align: center;}
+        .p7 .lc .comp{height:40px;display: block;padding-top:7px}
+        .p7 .lc .type{display: block;padding-top:5px}
+        .p7 .marry{position: relative;}
+        .p7 .marry .chk1{position: absolute;left:189px;top:23px;}
+        .p7 .marry .chk2{position: absolute;left:262px;top:23px;}
+        .p7 .subbox{margin-left: 188px;text-align: left;}
+        .p7 .subbox .workname{margin-left: 130px;;display: block;}
+        .p7 .subbox .workhist{margin-left: 130px;;display: block;padding-top: 5px;}
+        .p7 .subbox .workhist .year{margin-left: 20px;}
+        .p7 .subbox .workhist .month{margin-left: 95px;}
+        .p7 .subbox .time{margin-left: 30px;padding-top: 20px;display: inline-block;}
+        .p7 .subbox .min{margin-left: 405px;padding-top: 20px;display: inline-block;}
+        .p7 .subbox .rest{margin-left: 65px;padding-top: 20px;display: inline-block;}
+
+        .p7 .chk_box{height: 56px;margin-left: 23px;position: relative;}
+        .p7 .chk_box.c1{margin-top: 103px;}
+        .p7 .chk_box.c1 .chk1{position: absolute;left:0;top:0;}
+        .p7 .chk_box.c1 .chk2{position: absolute;left:219px;top:0;}
+        .p7 .chk_box.c1 .chk3{position: absolute;left:560px;top:0;}
+        .p7 .chk_box.c1 .chk4{position: absolute;left:0px;bottom:0;}
+        .p7 .chk_box.c1 .chk5{position: absolute;left:275px;bottom:0;}
+        .p7 .chk_box.c1 .chk6{position: absolute;left:562px;bottom:0;}
+
+        .p7 .chk_box.c2{margin-top: 103px;}
+        .p7 .chk_box.c2 .chk1{position: absolute;left:0;top:0;}
+        .p7 .chk_box.c2 .chk2{position: absolute;left:215px;top:0;}
+        .p7 .chk_box.c2 .chk3{position: absolute;left:355px;top:0;}
+        .p7 .chk_box.c2 .chk4{position: absolute;left:530px;top:0;}
+        .p7 .chk_box.c2 .chk5{position: absolute;left:699px;top:0;}
+
+        .p7 .chk_box.c3{margin-top: 73px;}
+        .p7 .chk_box.c3 .jboption{position: relative;margin-left: 71px;height: 30px;}
+        .p7 .chk_box.c3 .jboption .chk1{position: absolute;left:0;top:0;}
+        .p7 .chk_box.c3 .jboption .chk2{position: absolute;left:209px;top:0;}
+        .p7 .chk_box.c3 .jboption .chk3{position: absolute;left:328px;top:0;}
+        .p7 .chk_box.c3 .jboption .chk4{position: absolute;left:468px;top:0;}
+        .p7 .chk_box.c3 .jboption .chk5{position: absolute;left:568px;top:0;}
+        .p7 .chk_box.c3 .jbmain{position: relative;margin-left: 0px;height: 20px;}
+        .p7 .chk_box.c3 .jbmain .chk1{position: absolute;left:0;top:0;}
+        .p7 .chk_box.c3 .jbmain .chk2{position: absolute;left:130px;top:0;}
+        .p7 .chk_box.c3 .jbmain .chk3{position: absolute;left:463px;top:0;}
+        .p7 .chk_box.c3 .jbmain .chk4{position: absolute;left:593px;top:0;}
+
+        .p7 .chk_box.c4{margin-top: 134px;}
+        .p7 .chk_box.c4 .hurtmain{position: relative;margin-left: 11px;height: 28px;}
+        .p7 .chk_box.c4 .hurtmain .chk1{position: absolute;left:0px;top:0;}
+        .p7 .chk_box.c4 .hurtmain .chk2{position: absolute;left:109px;top:0;}
+        .p7 .chk_box.c4 .hurtoption{position: relative;margin-left: 218px;height: 28px;}
+        .p7 .chk_box.c4 .hurtoption .chk1{position: absolute;left:0px;top:0;}
+        .p7 .chk_box.c4 .hurtoption .chk2{position: absolute;left:144px;top:0;}
+        .p7 .chk_box.c4 .hurtoption .chk3{position: absolute;left:248px;top:0;}
+        .p7 .chk_box.c4 .hurtoption .chk4{position: absolute;left:312px;top:0;}
+        .p7 .chk_box.c4 .hurtoption .chk5{position: absolute;left:362px;top:0;}
+        .p7 .chk_box.c4 .hurtoption .chk6{position: absolute;left:427px;top:0;}
+
+        .p7 .chk_box.c5{margin-top: 92px;}
+        .p7 .chk_box.c5 .chk1{position: absolute;left:10px;top:0;}
+        .p7 .chk_box.c5 .chk2{position: absolute;left:258px;top:0;}
+        .p7 .chk_box.c5 .chk3{position: absolute;left:448px;top:0;}
+        .p7 .chk_box.c5 .chk4{position: absolute;left:627px;top:0;}
+
+        .p8{}
+        .p8 > .subbox{height:56px;position: relative;}
+        .p8 > .subbox .chk1{position: absolute;}
+        .p8 > .subbox .chk2{position: absolute;bottom:0;}
+
+        .tb_box{background: ;width:953px;margin-top: 47px;display: flex;padding-left:138px;}
+        .tb_box .column{width:135px;}
+        
+        .tb_box .where{height:71px;}
+
+        .tb_box .neck{}
+        .tb_box .neck .where{padding:22px 0 0 67px}
+        .tb_box .shoulder .where{padding:22px 0 0 75px}
+        .tb_box .arm .where{padding:22px 0 0 94px}
+        .tb_box .hand .where{padding:33px 0 0 85px}
+        .tb_box .back .where{padding:22px 0 0 78px}
+        .tb_box .leg .where{padding:22px 0 0 91px}
+
+        .tb_box .column .q1{height:92px;position: relative;padding:10px;}
+        .tb_box .column .q1 .chk1{position: absolute;left:12px;top:7px;}
+        .tb_box .column .q1 .chk2{position: absolute;left:12px;top:32px;}
+        .tb_box .column .q1 .chk3{position: absolute;left:12px;top:60px;}
+        .tb_box .column .q2{height:211px;position: relative;padding:10px;}
+        .tb_box .column .q2 .chk1{position: absolute;left:10px;top:44px;}
+        .tb_box .column .q2 .chk2{position: absolute;left:10px;top:68px;}
+        .tb_box .column .q2 .chk3{position: absolute;left:10px;top:90px;}        
+        .tb_box .column .q2 .chk4{position: absolute;left:10px;top:115px;}        
+        .tb_box .column .q2 .chk5{position: absolute;left:10px;top:137px;}        
+        .tb_box .column .q3{background-color: ;height:222px;position: relative;padding:10px;}
+        .tb_box .column .q3 .chk1{position: absolute;left:10px;top:2px;}
+        .tb_box .column .q3 .chk2{position: absolute;left:10px;top:24px;}
+        .tb_box .column .q3 .chk3{position: absolute;left:10px;top:48px;}        
+        .tb_box .column .q3 .chk4{position: absolute;left:10px;top:71px;}        
+        .tb_box .column .q4{background-color: ;height:146px;position: relative;padding:10px;}
+        .tb_box .column .q4 .chk1{position: absolute;left:10px;top:10px;}
+        .tb_box .column .q4 .chk2{position: absolute;left:10px;top:35px;}
+        .tb_box .column .q4 .chk3{position: absolute;left:10px;top:56px;}        
+        .tb_box .column .q4 .chk4{position: absolute;left:10px;top:79px;}     
+        .tb_box .column .q4 .chk5{position: absolute;left:10px;top:103px;}  
+        .tb_box .column .q5{background-color: ;height:117px;position: relative;padding:10px;}
+        .tb_box .column .q5 .chk1{position: absolute;left:10px;top:30px;}
+        .tb_box .column .q5 .chk2{position: absolute;left:10px;top:56px;}     
+        .tb_box .column .q6{background-color: ;height:186px;position: relative;padding:10px;}
+        .tb_box .column .q6 .chk1{position: absolute;left:10px;top:19px;}
+        .tb_box .column .q6 .chk2{position: absolute;left:10px;top:43px;}
+        .tb_box .column .q6 .chk3{position: absolute;left:10px;top:65px;}        
+        .tb_box .column .q6 .chk4{position: absolute;left:10px;top:88px;}     
+        .tb_box .column .q6 .chk5{position: absolute;left:10px;top:112px;}        
+        .tb_box .column .q6 .chk5 > span{font-size: 13px;position: absolute;bottom:-23px;width:80px;left:49px} 
+
+        .p9{}
+        .p9 .row{}
+        .p9 .name{width:195px;display: inline-block;text-align: left;padding-left: 31px;position: relative;}
+        .p9 .name img{height:60px;display: inline-block;position: absolute;right:2px; bottom:-24px;max-width: none;;}
+        .p9 .cate{width:177px;display: inline-block;margin-left: 130px;;display: inline-block;text-align: center;}
+        .p9 .teamcap{width:144px;display: inline-block;margin-left: 84px;;display: inline-block;text-align: center;padding-top: 9px;}
+        .p9 .birth{width:195px;display: inline-block;text-align: center;}
+        .p9 .addr{width:410px;display: inline-block;text-align: center;margin-left: 130px;padding-top: 9px;}
+        .p9 .nation{width:195px;display: inline-block;text-align: center;padding-top: 9px;}
+        .p9 .tels{margin-left: 130px;padding-top: 9px;}
+        .p9 .tels .mtel{margin-left: 60px;}
+        .p9 .tels .ftel{margin-left: 113px;}
+
+        .p9 .he2{margin-top: 72px;}
+        .p9 .he2 .row{position: relative;font-size: 20px;}
+        .p9 .he2 span{position: absolute;top:6px;}
+        .p9 .he2 .year{right:268px;}
+        .p9 .he2 .month{right:204px;}
+        .p9 .he2 .haveacc .chk1{right:280px;}
+        .p9 .he2 .haveacc .chk2{right:194px;}
+        .p9 .he2 .hist .chk1{right:282px;}
+        .p9 .he2 .hist .chk2{right:195px;}
+        .p9 .he2 .med .chk1{right:282px;}
+        .p9 .he2 .med .chk2{right:195px;}
+        .p9 .docsay{}
+        .p9 .docsay .blood{right:369px;}
+        .p9 .docsay .heart{right:295px;}
+        .p9 .docsay .sugar{right:238px;}
+        .p9 .docsay .disk{right:169px;}
+        .p9 .docsay .etc{right:97px;}
+        .p9 .docsay .none{right:19px;}
+        .p9 .nowhealth{}
+        .p9 .nowhealth .good{right:283px;}
+        .p9 .nowhealth .normal{right:218px;}        
+        .p9 .nowhealth .bad{right:142px;}        
+        .p9 .he3{margin-top: 110px;margin-left: 130px;}
+        .p9 .he3 .row{display: flex;align-items: center;height: 46px;}
+        .p9 .he3 .test01{}
+        .p9 .he3 .row .num{width:225px;text-align: right;padding-right: 120px;}
+        .p9 .he3 .row .warnchk{width:225px;position: relative;height:46px;}
+        .p9 .he3 .row .warnchk .chk1{position: absolute;left:64px;top:13px;}
+        .p9 .he3 .row .warnchk .chk2{position: absolute;left:129px;top:13px;}
+
+        .p9 .he3 .test03{height: 43px;;}
+        .p9 .he3 .test04{height: 43px;;}
+        .p9 .he3 .test05{height: 43px;;}
+
+        .p10.sdate{font-size: 25px;position: absolute;bottom:249px; right:53px;font-family: "ChosunSm";font-weight: 600;letter-spacing: 2px;color: #000;}
+        .p10.sname{font-size: 25px;position: absolute;bottom:151px; right:197px;}
+        .p10.sname img{height:140px;position: absolute;right:-179px;bottom:-63px;max-width: none;;}
+
+        .p11.sdate{font-size: 22px;position: absolute;bottom:244px; left:190px;font-family: "ChosunSm";font-weight: 600;letter-spacing: 2px;color: #000;}
+        .p11.sname{font-size: 25px;position: absolute;bottom:175px; right:184px;}
+        .p11.sname img{height:140px;position: absolute;right:-149px;bottom:-63px;max-width: none;;}

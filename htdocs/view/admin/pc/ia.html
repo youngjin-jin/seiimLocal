@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ia</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+</head>
+<style>
+    body{ background: none; }
+    .content{ padding: 0 20px; }
+    h1{ padding: 20px 0 }
+    table{ border: 1px solid #e0e0e0; border-collapse: collapse; width: 100%; }
+    table td,
+    table th{ padding: 5px 10px; font-size: 12px; }
+    table th{ background: #eeeeee; color: #5c5c5c; border: 1px solid #ffffff; border-top-color: #e0e0e0; text-align: center; font-weight: 500; }
+    table th.tit-lg{ font-size: 14px; background: #dddddd; border-right: 1px solid #e0e0e0; }
+    table tr th:first-child{ border-left: 1px solid #e0e0e0; }
+    table tr th:last-child{ border-right: 1px solid #e0e0e0; }
+    table td a{ text-decoration: underline; }
+    table td{ background: #ffffff; border: 1px solid #e0e0e0; }
+</style>
+<body>
+    <div class="content">
+        <h1>HTML Page Guide</h1>
+        <table>
+            <colgroup>
+                <col style="width: 375px">
+                <col style="width: 375px">
+                <col style="width: 564px">
+                <col style="width: 564px">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>1Depth</th>
+                    <th>2Depth</th>
+                    <th>URL</th>
+                    <th>비고</th>
+                </tr>
+                <!-- <tr>
+                    <th colspan="5" class="tit-lg">Guide</th>
+                </tr>
+                <tr>
+                    <td>layout</td>
+                    <td>basic</td>
+                    <td>&nbsp;</td>
+                    <td><a href="guide/layout_templete.html" target="_blank">guide/layout_templete.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>popup</td>
+                    <td>&nbsp;</td>
+                    <td><a href="guide/popup.html" target="_blank">guide/popup.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>switch</td>
+                    <td>&nbsp;</td>
+                    <td><a href="guide/switch.html" target="_blank">guide/switch.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>dccon</td>
+                    <td>dccon</td>
+                    <td>&nbsp;</td>
+                    <td><a href="dccon/dccon.html" target="_blank">dccon/dccon.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>dccon popup</td>
+                    <td>&nbsp;</td>
+                    <td><a href="dccon/dccon_popup.html" target="_blank">dccon/dccon_popup.html</a></td>
+                    <td>&nbsp;</td>
+                </tr> -->
+                <tr>
+                    <th colspan="4" class="tit-lg">Page</th>
+                </tr>
+                <tr>
+                    <td>00 로그인</td>
+                    <td>&nbsp;</td>
+                    <td><a href="html/login.html" target="_blank">html/login.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>01 대시보드</td>
+                    <td>&nbsp;</td>
+                    <td><a href="html/dashboard.html" target="_blank">html/dashboard.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>02 근로자관리</td>
+                    <td>리스트</td>
+                    <td><a href="html/worker_management.html" target="_blank">html/worker_management.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>상세</td>
+                    <td><a href="html/worker_management_detail.html" target="_blank">html/worker_management_detail.html</a></td>
+                    <td>
+                        - 임시 비밀번호 발송 popup <br>
+                        - 리스트 삭제 popup <br>
+                        - 자격증 보기 popup <br>
+                        - 장비 자격증 추가 popup <br>
+                        - 현장 추가 popup <br>
+                        - 현장 추가 popup > 소속업체 안내 tooltip
+                    </td>
+                </tr>
+                <tr>
+                    <td>03 관리자 관리</td>
+                    <td>리스트</td>
+                    <td><a href="html/manager_management.html" target="_blank">html/manager_management.html</a></td>
+                    <td>
+                        - 리스트 생성 권한 체크 popup
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>생성</td>
+                    <td><a href="html/manager_management_detail.html" target="_blank">html/manager_management_detail.html</a></td>
+                    <td>
+                        - 현장 추가 popup <br>
+                        - 현장 추가 popup > 소속업체 정보 재확인 popup <br>
+                        - 현장 추가 popup > 소속업체 안내 tooltip
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>수정</td>
+                    <td><a href="html/manager_management_modify.html" target="_blank">html/manager_management_modify.html</a></td>
+                    <td>
+                        - 현장 추가 popup <br>
+                        - 현장 추가 popup > 소속업체 정보 재확인 popup <br>
+                        - 현장 추가 popup > 소속업체 안내 tooltip
+                    </td>
+                </tr>
+                <tr>
+                    <td>04 근로자 작성문서 관리</td>
+                    <td>리스트</td>
+                    <td><a href="html/writing_management.html" target="_blank">html/writing_management.html</a></td>
+                    <td>
+                        - 리스트 삭제 popup
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>상세</td>
+                    <td><a href="html/writing_management_detail.html" target="_blank">html/writing_management_detail.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>05 문서 관리</td>
+                    <td>리스트</td>
+                    <td><a href="html/document_management.html" target="_blank">html/document_management.html</a></td>
+                    <td>
+                        - 리스트 삭제 popup
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>상세</td>
+                    <td><a href="html/document_management_detail.html" target="_blank">html/document_management_detail.html</a></td>
+                    <td>
+                        - 관련 교육 내역 popup
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>상세_데이터없음</td>
+                    <td><a href="html/document_management_detail_nodb.html" target="_blank">html/document_management_detail_nodb.html</a></td>
+                    <td>
+                        - 관련 교육 내역 popup
+                    </td>
+                </tr>
+                <tr>
+                    <td>06 업체 관리</td>
+                    <td>리스트</td>
+                    <td><a href="html/company_management.html" target="_blank">html/company_management.html</a></td>
+                    <td>
+                        - 리스트 삭제 popup <br>
+                        - 업체 추가 popup
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>상세</td>
+                    <td><a href="html/company_management_detail.html" target="_blank">html/company_management_detail.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>07 현장 관리</td>
+                    <td>리스트</td>
+                    <td><a href="html/field_management.html" target="_blank">html/field_management.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>상세</td>
+                    <td><a href="html/field_management_detail.html" target="_blank">html/field_management_detail.html</a></td>
+                    <td>
+                        - 협력사 popup
+                    </td>
+                </tr>
+                <tr>
+                    <td>08 교육내역관리</td>
+                    <td>리스트</td>
+                    <td><a href="html/edu_history_management.html" target="_blank">html/edu_history_management.html</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>상세</td>
+                    <td><a href="html/edu_history_management_detail.html" target="_blank">html/edu_history_management_detail.html</a></td>
+                    <td>
+                        - 교육수료자 추가 popup <br>
+                        - 날짜 선택 popup <br>
+                        - 삭제 popup
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>상세2</td>
+                    <td><a href="html/edu_history_management_view.html" target="_blank">html/edu_history_management_view.html</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>09 설정</td>
+                    <td>교육종류 관리</td>
+                    <td><a href="html/setting_edu_management.html" target="_blank">html/setting_edu_management.html</a></td>
+                    <td>
+                        - 교육종류 추가 popup
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>장비 관리</td>
+                    <td><a href="html/setting_equipment_management.html" target="_blank">html/setting_equipment_management.html</a></td>
+                    <td>
+                        - 장비관리 추가 popup
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

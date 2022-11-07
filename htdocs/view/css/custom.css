@@ -1,0 +1,57 @@
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%; height: 40px; border: 1px solid #CED4DA; border-radius: 4px; padding: 0 10px; padding-right: 22px;
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 40px;
+  background: #ffffff;
+}
+
+.chosen-container-single .chosen-single span {
+  display: block;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-right: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chosen-container-single .chosen-single div b {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("/view/images/chosen-sprite.png") no-repeat 0px 10px;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  background-position: -18px 10px;
+}
+
+#language_name_span { color:#fff; }
+
+.disabled { background-color:#e8f6f0 !important; }
+
+.tab {
+	padding:8px 20px;
+	background-color: #fff;
+	border:1px solid #CED4DA;
+	margin-bottom:-1px;
+	margin-right:10px;
+}
+
+.tab.active {
+	font-weight:700;
+	color:#fff;
+	background-color: #0D806F;
+	border:1px solid #0D806F;
+}
+
+.ql-editor p {
+  font-size: 18px;
+}
+
+.inp-wrap.radio_overwrap .inp-item.radio{margin-right:30px;margin-left:0;}
+.inp-wrap.radio_overwrap .inp-item.radio + .inp-item.radio{margin-left:0;} 
