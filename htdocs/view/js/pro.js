@@ -410,8 +410,6 @@ function change_language(language) {
 }
 
 $(document).ready(function () {
-	$('h1').click(function () {
-		window.location = '/'
- })
+
 	console.log(locale, DEVICE, getCookie('member_type'));
 });

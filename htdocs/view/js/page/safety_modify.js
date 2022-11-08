@@ -2403,9 +2403,16 @@ $('input:radio[name="input6_1"]').on('click', function () {
 	}
 	else
 	{
+		$("input:radio[name='input6_2']").removeAttr("checked");
+		$("input:radio[name='input6_3']").removeAttr("checked");
+
+
+
 		$(".input_7_area").hide();
 	}
 });
+
+
 $('input:radio[name="input7_1"]').on('click', function () {
 	if($(this).val() == 'Y')
 	{

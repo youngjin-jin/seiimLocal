@@ -1,4 +1,4 @@
-<link href="/view/css/print_dl.css" rel="stylesheet" type="text/css">
+<link href="/view/css/print_dl.css?ver=2301" rel="stylesheet" type="text/css">
 
 <!--<?php print_r($element['eduDoc']); ?>-->
 <?php
@@ -7,7 +7,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 ?>
 	<div class="print_page" style="padding:0px 0;">
 		<img src="/view/images/dl_new_doc/dl_doc_01.jpg" style="margin:0 auto;">
-		<div style="margin-top:-1306px;margin-left:214px;"><?php echo $element['eduDoc']['siteName'] ?></div>
+		<div style="margin-top:-1306px;margin-left:214px;width:315px;text-align:center;"><?php echo $element['eduDoc']['siteName'] ?></div>
 		<div style="display:flex;margin-top:12px;margin-left:588px;">
 			<div class="row" style="display:flex;">
 				<!--<div class="col" style="flex:none;width:454px;text-align:center;"><?php echo $element['eduDoc']['svName'] ?></div>-->
@@ -17,7 +17,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 		<div style="margin-top:9px;margin-left:224px;">
 			<div class="row" style="display:flex;">
 				<div class="col" style="flex:none;width:180px;text-align:center;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?></div>
-				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php echo $element['eduDoc']['eduWorkerCnt'] ?></div>
+				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?></div>
 				<div class="col" style="flex:none;width:233px;margin-left:102px;padding-top:20px;;text-align:center;height:44px;"><?php echo $element['eduDoc']['instructor'] ?></div>
 			</div>
 		</div>
@@ -36,7 +36,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 		</div>
 		<div style="margin-top:86px;margin-left:538px;margin-bottom:35px;">
 			<div class="row" style="display:flex;">
-				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['memo'] ?></div>
+				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['doc'] ?></div>
 			</div>
 		</div>
 		<div style="margin-top:48px;margin-left:93px;margin-bottom:153px;height:246px">
@@ -68,7 +68,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 					<div style="display:flex;margin-top:<?php if ($w == 0) echo 100 ?>px;margin-left:17px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -79,7 +79,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 					<div style="display:flex;margin-top:-<?php if ($w == 25) echo 1225 ?>px;margin-left:499px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w  + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:155px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -104,7 +104,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 ?>
 	<div class="print_page" style="padding:0px 0;">
 		<img src="/view/images/dl_new_doc/dl_doc_02.jpg" style="margin:0 auto;">
-		<div style="margin-top:-1306px;margin-left:214px;"><?php echo $element['eduDoc']['siteName'] ?></div>
+		<div style="margin-top:-1306px;margin-left:214px;width:315px;text-align:center;"><?php echo $element['eduDoc']['siteName'] ?></div>
 		<div style="display:flex;margin-top:12px;margin-left:588px;">
 			<div class="row" style="display:flex;">
 				<!--<div class="col" style="flex:none;width:454px;text-align:center;"><?php echo $element['eduDoc']['svName'] ?></div>-->
@@ -114,7 +114,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 		<div style="margin-top:9px;margin-left:224px;">
 			<div class="row" style="display:flex;">
 				<div class="col" style="flex:none;width:180px;text-align:center;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?></div>
-				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php echo $element['eduDoc']['eduWorkerCnt'] ?></div>
+				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?></div>
 				<div class="col" style="flex:none;width:233px;margin-left:102px;padding-top:20px;;text-align:center;height:44px;"><?php echo $element['eduDoc']['instructor'] ?></div>
 			</div>
 		</div>
@@ -133,7 +133,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 		</div>
 		<div style="margin-top:86px;margin-left:538px;margin-bottom:35px;">
 			<div class="row" style="display:flex;">
-				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['memo'] ?></div>
+				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['doc'] ?></div>
 			</div>
 		</div>
 		<div style="margin-top:48px;margin-left:93px;margin-bottom:153px;height:246px">
@@ -165,7 +165,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 					<div style="display:flex;margin-top:<?php if ($w == 0) echo 100 ?>px;margin-left:17px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -176,7 +176,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 					<div style="display:flex;margin-top:-<?php if ($w == 25) echo 1225 ?>px;margin-left:499px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w  + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:155px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -199,7 +199,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 ?>
 	<div class="print_page" style="padding:0px 0;">
 		<img src="/view/images/dl_new_doc/dl_doc_03.jpg" style="margin:0 auto;">
-		<div style="margin-top:-1306px;margin-left:214px;"><?php echo $element['eduDoc']['siteName'] ?></div>
+		<div style="margin-top:-1306px;margin-left:214px;width:315px;text-align:center;"><?php echo $element['eduDoc']['siteName'] ?></div>
 		<div style="display:flex;margin-top:12px;margin-left:588px;">
 			<div class="row" style="display:flex;">
 				<!--<div class="col" style="flex:none;width:454px;text-align:center;"><?php echo $element['eduDoc']['svName'] ?></div>-->
@@ -209,7 +209,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 		<div style="margin-top:9px;margin-left:224px;">
 			<div class="row" style="display:flex;">
 				<div class="col" style="flex:none;width:180px;text-align:center;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?></div>
-				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php echo $element['eduDoc']['eduWorkerCnt'] ?></div>
+				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?></div>
 				<div class="col" style="flex:none;width:233px;margin-left:102px;padding-top:20px;;text-align:center;height:44px;"><?php echo $element['eduDoc']['instructor'] ?></div>
 			</div>
 		</div>
@@ -228,7 +228,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 		</div>
 		<div style="margin-top:86px;margin-left:538px;margin-bottom:35px;">
 			<div class="row" style="display:flex;">
-				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['memo'] ?></div>
+				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['doc'] ?></div>
 			</div>
 		</div>
 		<div style="margin-top:48px;margin-left:93px;margin-bottom:153px;height:246px">
@@ -250,7 +250,6 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 	
 	
 	<?php
-
 	for ($i = 0; $i < ceil(count($element['eduDoc']['workers']) / 50); $i++) {
 	?>
 		<div class="print_page" style="padding:50px 20px;">
@@ -263,7 +262,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 					<div style="display:flex;margin-top:<?php if ($w == 0) echo 100 ?>px;margin-left:17px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -274,7 +273,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 					<div style="display:flex;margin-top:-<?php if ($w == 25) echo 1225 ?>px;margin-left:499px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w  + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w  + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:155px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -293,7 +292,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 
 
 
-	<div class="print_page" style="padding:50px 20px;min-height: 1521px;">
+	<div class="print_page" style="padding:50px 20px;height:1521px">
 		<img src="/view/images/dl_new_doc/dl_doc_pic.jpg" style="margin:0 auto;">
 
 	<?php
@@ -317,7 +316,7 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 		</div>		
 		<?php if($cnt % 2 == 0 &&  $cnt != count($element['mgrDoc'])) { ?>
 		</div>
-		<div class="print_page" style="padding:50px 20px;min-height: 1521px;">
+		<div class="print_page" style="padding:50px 20px;height:1521px">
 			<img src="/view/images/dl_new_doc/dl_doc_pic.jpg" style="margin:0 auto;">
 		<?php } ?>
 	<?php
@@ -389,10 +388,7 @@ if (count($element['mgrDoc']) > 0) {
 			if($val['templateType'] == 12)
 			{
 				
-				$birth_time   = strtotime($userBirth);
-				$nowTime          = date('Ymd');
-				$birthdayCal     = date('Ymd' , $birth_time);
-				$userAge           = floor(($nowTime - $birthdayCal) / 10000);
+				
 
 				$nowWorkname = $val['content']['input1_1'];
 				$nowWorkyear = $val['content']['input1_2'];
@@ -501,6 +497,11 @@ if (count($element['mgrDoc']) > 0) {
 		$birth_array = explode('-', substr($mgrDoc['userInfo']['birth'], 0, 10));
 		$userBirth = $birth_array[0] . '년 ' . $birth_array[1] . '월 ' . $birth_array[2] . '일';
 
+		$birth_time   = strtotime($mgrDoc['userInfo']['birth']);
+		$nowTime          = date('Ymd');
+		$birthdayCal     = date('Ymd' , $birth_time);
+		$userAge           = floor(($nowTime - $birthdayCal) / 10000);
+
 
 	
 ?>
@@ -511,6 +512,7 @@ if (count($element['mgrDoc']) > 0) {
     <div class="print_page" style="padding:0px 0;position:relative">
 		<img src="/view/images/dl_doc/dl_doc_01.jpg" style="margin:0 auto;width:100%">
 		<div class="pwrap" style="position: absolute;top:145px;left:80px;">
+			<div class="cerdates" style="position:absolute;top:3px;left:193px;"><?php echo substr($mgrDoc['userInfo']['certDate'], 0, 10) ?></div>
 			<div class="box"style="margin-top:53px;margin-left: 307px;height:25px;">
 				<?php if($mgrDoc['userInfo']['national'] == "대한민국(Republic of Korea)"){ ?>
 					<span class="chk1">✔</span>
@@ -1397,7 +1399,7 @@ if (count($element['mgrDoc']) > 0) {
 		</div>
 		<div style="margin-top:75px;margin-left:535px;margin-bottom:50px;">
 			<div class="row" style="display:flex;">
-				<div class="col ql-editor" style="flex:none;width:495px;height:725px;"><?php echo $element['eduDoc']['memo'] ?></div>
+				<div class="col ql-editor" style="flex:none;width:495px;height:725px;"><?php echo $element['eduDoc']['doc'] ?></div>
 			</div>
 		</div>
 	</div>
@@ -1407,7 +1409,7 @@ if (count($element['mgrDoc']) > 0) {
 ?>
 	<div class="print_page" style="padding:0 0px;">
 		<img src="/view/images/dl_new_doc/dl_doc_04.jpg" style="margin:0 auto;">
-		<div style="margin-top:-1306px;margin-left:214px;"><?php echo $element['eduDoc']['siteName'] ?></div>
+		<div style="margin-top:-1306px;margin-left:214px;width:315px;text-align:center;"><?php echo $element['eduDoc']['siteName'] ?></div>
 		<div style="display:flex;margin-top:12px;margin-left:588px;">
 			<div class="row" style="display:flex;">
 				<!--<div class="col" style="flex:none;width:454px;text-align:center;"><?php echo $element['eduDoc']['svName'] ?></div>-->
@@ -1417,7 +1419,7 @@ if (count($element['mgrDoc']) > 0) {
 		<div style="margin-top:9px;margin-left:224px;">
 			<div class="row" style="display:flex;">
 				<div class="col" style="flex:none;width:180px;text-align:center;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?></div>
-				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php echo $element['eduDoc']['eduWorkerCnt'] ?></div>
+				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?></div>
 				<div class="col" style="flex:none;width:233px;margin-left:102px;padding-top:20px;;text-align:center;height:44px;"><?php echo $element['eduDoc']['instructor'] ?></div>
 			</div>
 		</div>
@@ -1436,7 +1438,7 @@ if (count($element['mgrDoc']) > 0) {
 		</div>
 		<div style="margin-top:86px;margin-left:538px;margin-bottom:35px;">
 			<div class="row" style="display:flex;">
-				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['memo'] ?></div>
+				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['doc'] ?></div>
 			</div>
 		</div>
 		<div style="margin-top:48px;margin-left:93px;margin-bottom:153px;height:246px">
@@ -1468,7 +1470,7 @@ if (count($element['mgrDoc']) > 0) {
 					<div style="display:flex;margin-top:<?php if ($w == 0) echo 100 ?>px;margin-left:17px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -1479,7 +1481,7 @@ if (count($element['mgrDoc']) > 0) {
 					<div style="display:flex;margin-top:-<?php if ($w == 25) echo 1225 ?>px;margin-left:499px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w  + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:155px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -1495,7 +1497,7 @@ if (count($element['mgrDoc']) > 0) {
 	}
 	?>
 
-	<div class="print_page" style="padding:50px 20px;">
+	<div class="print_page" style="padding:50px 20px;height:1521px">
 		<img src="/view/images/dl_new_doc/dl_doc_pic.jpg" style="margin:0 auto;">
 
 	<?php
@@ -1519,7 +1521,7 @@ if (count($element['mgrDoc']) > 0) {
 		</div>		
 		<?php if($cnt % 2 == 0 &&  $cnt != count($element['mgrDoc'])) { ?>
 		</div>
-		<div class="print_page" style="padding:50px 20px;">
+		<div class="print_page" style="padding:50px 20px;height:1521px">
 			<img src="/view/images/dl_new_doc/dl_doc_pic.jpg" style="margin:0 auto;">
 		<?php } ?>
 	<?php
@@ -1533,7 +1535,7 @@ if (count($element['mgrDoc']) > 0) {
 ?>
 	<div class="print_page" style="padding:0px 0;">
 		<img src="/view/images/dl_new_doc/dl_doc_05.jpg" style="margin:0 auto;">
-		<div style="margin-top:-1306px;margin-left:214px;"><?php echo $element['eduDoc']['siteName'] ?></div>
+		<div style="margin-top:-1306px;margin-left:214px;width:315px;text-align:center;"><?php echo $element['eduDoc']['siteName'] ?></div>
 		<div style="display:flex;margin-top:12px;margin-left:588px;">
 			<div class="row" style="display:flex;">
 				<!--<div class="col" style="flex:none;width:454px;text-align:center;"><?php echo $element['eduDoc']['svName'] ?></div>-->
@@ -1543,7 +1545,7 @@ if (count($element['mgrDoc']) > 0) {
 		<div style="margin-top:9px;margin-left:224px;">
 			<div class="row" style="display:flex;">
 				<div class="col" style="flex:none;width:180px;text-align:center;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?></div>
-				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php echo $element['eduDoc']['eduWorkerCnt'] ?></div>
+				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?></div>
 				<div class="col" style="flex:none;width:233px;margin-left:102px;padding-top:20px;;text-align:center;height:44px;"><?php echo $element['eduDoc']['instructor'] ?></div>
 			</div>
 		</div>
@@ -1562,7 +1564,7 @@ if (count($element['mgrDoc']) > 0) {
 		</div>
 		<div style="margin-top:86px;margin-left:538px;margin-bottom:35px;">
 			<div class="row" style="display:flex;">
-				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['memo'] ?></div>
+				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['doc'] ?></div>
 			</div>
 		</div>
 
@@ -1598,7 +1600,7 @@ if (count($element['mgrDoc']) > 0) {
 					<div style="display:flex;margin-top:<?php if ($w == 0) echo 100 ?>px;margin-left:17px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -1609,7 +1611,7 @@ if (count($element['mgrDoc']) > 0) {
 					<div style="display:flex;margin-top:-<?php if ($w == 25) echo 1225 ?>px;margin-left:499px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w  + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:155px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -1628,7 +1630,7 @@ if (count($element['mgrDoc']) > 0) {
 
 
 
-	<div class="print_page" style="padding:50px 20px;">
+	<div class="print_page" style="padding:50px 20px;height:1521px;">
 		<img src="/view/images/dl_new_doc/dl_doc_pic.jpg" style="margin:0 auto;">
 
 	<?php
@@ -1652,7 +1654,7 @@ if (count($element['mgrDoc']) > 0) {
 		</div>		
 		<?php if($cnt % 2 == 0 &&  $cnt != count($element['mgrDoc'])) { ?>
 		</div>
-		<div class="print_page" style="padding:50px 20px;">
+		<div class="print_page" style="padding:50px 20px;height:1521px">
 			<img src="/view/images/dl_new_doc/dl_doc_pic.jpg" style="margin:0 auto;">
 		<?php } ?>
 	<?php
@@ -1666,7 +1668,7 @@ if (count($element['mgrDoc']) > 0) {
 ?>
 	<div class="print_page" style="padding:0px 0;">
 		<img src="/view/images/dl_new_doc/dl_doc_06.jpg" style="margin:0 auto;">
-		<div style="margin-top:-1306px;margin-left:214px;"><?php echo $element['eduDoc']['siteName'] ?></div>
+		<div style="margin-top:-1306px;margin-left:214px;width:315px;text-align:center;"><?php echo $element['eduDoc']['siteName'] ?></div>
 		<div style="display:flex;margin-top:12px;margin-left:588px;">
 			<div class="row" style="display:flex;">
 				<!--<div class="col" style="flex:none;width:454px;text-align:center;"><?php echo $element['eduDoc']['svName'] ?></div>-->
@@ -1676,7 +1678,7 @@ if (count($element['mgrDoc']) > 0) {
 		<div style="margin-top:9px;margin-left:224px;">
 			<div class="row" style="display:flex;">
 				<div class="col" style="flex:none;width:180px;text-align:center;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?></div>
-				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php echo $element['eduDoc']['eduWorkerCnt'] ?></div>
+				<div class="col" style="flex:none;width:115px;margin-left:130px;text-align:center;"><?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?></div>
 				<div class="col" style="flex:none;width:233px;margin-left:102px;padding-top:20px;;text-align:center;height:44px;"><?php echo $element['eduDoc']['instructor'] ?></div>
 			</div>
 		</div>
@@ -1695,7 +1697,7 @@ if (count($element['mgrDoc']) > 0) {
 		</div>
 		<div style="margin-top:86px;margin-left:538px;margin-bottom:35px;">
 			<div class="row" style="display:flex;">
-				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['memo'] ?></div>
+				<div class="col ql-editor" style="flex:none;width:443px;height:589px;padding-top:22px"><?php echo $element['eduDoc']['doc'] ?></div>
 			</div>
 		</div>
 		<div style="margin-top:48px;margin-left:93px;margin-bottom:153px;height:246px">
@@ -1727,7 +1729,7 @@ for ($i = 0; $i < ceil(count($element['eduDoc']['workers']) / 50); $i++) {
 					<div style="display:flex;margin-top:<?php if ($w == 0) echo 100 ?>px;margin-left:17px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:140px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>
@@ -1738,7 +1740,7 @@ for ($i = 0; $i < ceil(count($element['eduDoc']['workers']) / 50); $i++) {
 					<div style="display:flex;margin-top:-<?php if ($w == 25) echo 1225 ?>px;margin-left:499px;">
 						<div class="row" style="display:flex;height:49px;">
 							<div class="col" style="flex:none;width:66px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $w + 1 + (50 * $i) ?></div>
-							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w  + (50 * $i)]['name']) echo $element['eduDoc']['svName'] ?></div>
+							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><?php if ($element['eduDoc']['workers'][$w + (50 * $i)]['name']) echo $element['eduDoc']['workers'][$w + (50 * $i)]['svName'] ?></div>
 							<div class="col" style="flex:none;width:155px;text-align:center;margin:auto;vertical-align:middle;"><?php echo $element['eduDoc']['workers'][$w + (50 * $i)]['name'] ?></div>
 							<div class="col" style="flex:none;width:150px;text-align:center;margin:auto;vertical-align:middle;"><img src='<?php echo $element['eduDoc']['workers'][$w  + (50 * $i)]['sign'] ?>' style="margin:auto;height:49px"></div>
 						</div>

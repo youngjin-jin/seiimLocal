@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    $('h1').click(function () {
+      window.location = '/';
+    });
+
     /* 20210819 수정 */
     /* lnb on일 시 아이콘 이미지 변경 */
     $('.lnb-wrap .lnb-content > ul > li').each(function(){
