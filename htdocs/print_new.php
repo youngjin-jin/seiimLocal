@@ -1,5 +1,7 @@
+<!--<?php print_r($element['eduDoc']); ?>-->
+
 <?php
-if ($element['eduDoc']['cat1Id'] == 10) {
+if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
     //1: 정기안전보건교육(근로자)
 ?>
     <div class="print_page newTable" style="padding:0px 50px ;position:relative;">
@@ -211,7 +213,7 @@ if ($element['eduDoc']['cat1Id'] == 10) {
 
     
 <?php
-} else if ($element['eduDoc']['cat1Id'] == 11) {
+} else if ($element['eduDoc']['cat1Id'] == 11 || $element['eduDoc']['cat1Id'] == 2  ) {
     //2. 정기안전보건교육(관리감독자)
 ?>
     <div class="print_page newTable" style="padding:0 50px;position:relative;">
@@ -422,7 +424,7 @@ if ($element['eduDoc']['cat1Id'] == 10) {
 
     
 <?php
-} else if ($element['eduDoc']['cat1Id'] == 12) {
+} else if ($element['eduDoc']['cat1Id'] == 12 || $element['eduDoc']['cat1Id'] == 9  ) {
     //9: 신규채용자안전보건교육
 ?>
     <div class="print_page newTable" style="padding:0 50px;position:relative;">
@@ -630,7 +632,7 @@ if ($element['eduDoc']['cat1Id'] == 10) {
     }
     ?>
 <?php
-} else if ($element['eduDoc']['cat1Id'] == 13) {
+} else if ($element['eduDoc']['cat1Id'] == 13 || $element['eduDoc']['cat1Id'] == 5  ) {
     //5: 작업 변경 시 교육
 ?>
     <div class="print_page newTable" style="padding:0px 50px ;position:relative;">
@@ -808,7 +810,7 @@ if ($element['eduDoc']['cat1Id'] == 10) {
     }
     ?>
 <?php
-} else if ($element['eduDoc']['cat1Id'] == 14) {
+} else if ($element['eduDoc']['cat1Id'] == 14 || $element['eduDoc']['cat1Id'] == 6  ) {
     //6: 특별안전보건교육
 ?>
     <?php if($element['eduDoc']['cat2Name'] == '1톤 이상 또는 1톤 미만 크레인 사용 작업') { ?>
@@ -1331,7 +1333,7 @@ if ($element['eduDoc']['cat1Id'] == 10) {
     </div>
     <?php } ?>
 
-    <?php if($element['eduDoc']['cat2Name'] == '굴착면의 높이가 2미터 이상이 되는 지반 굴착') { ?>
+    <?php if($element['eduDoc']['cat2Name'] == '굴착면의 높이가 2미터 이상이 되는 지반 굴착' || $element['eduDoc']['cat2Name'] == '굴착면의 높이가 2m이상이 되는 암석의 굴착작업') { ?>
         <div class="print_page newTable" style="padding:0 50px;position:relative;">
         <table class="pr_tb secondSt">
             <tr >
@@ -2550,11 +2552,12 @@ if ($element['eduDoc']['cat1Id'] == 10) {
 
     
 <?php
-} else if ($element['eduDoc']['cat1Id'] == 15) {
+} else if ($element['eduDoc']['cat1Id'] == 15 || $element['eduDoc']['cat1Id'] == 7  ) {
     //7: 특수형태근로종사자 교육
 ?>
     
-    <?php if($element['eduDoc']['cat2Name'] == '굴삭기운전원(2m이상 굴착 없음)' || $element['eduDoc']['cat2Name'] == '덤프트럭' || $element['eduDoc']['cat2Name'] == '펌프카' || $element['eduDoc']['cat2Name'] == '바브켓' || $element['eduDoc']['cat2Name'] == '살수차' ) { ?>
+    
+    <?php if(36  <= $element['eduDoc']['cat2Id'] && 63 >= $element['eduDoc']['cat2Id']) { ?>
         <div class="print_page newTable" style="padding:0 50px;position:relative;">
         <table class="pr_tb secondSt">
             <tr >
@@ -2735,7 +2738,7 @@ if ($element['eduDoc']['cat1Id'] == 10) {
 
 
 <?php
-} else if ($element['eduDoc']['cat1Id'] == 16) {
+} else if ($element['eduDoc']['cat1Id'] == 16 || $element['eduDoc']['cat1Id'] == 8  ) {
     //8: 물질안전보건(MSDS)교육
 ?>
     <div class="print_page newTable" style="padding:0 50px;position:relative;">
@@ -2906,7 +2909,7 @@ if ($element['eduDoc']['cat1Id'] == 10) {
     
 <?php
 
-} else if ($element['eduDoc']['cat1Id'] == 18 ) {
+} else if ($element['eduDoc']['cat1Id'] == 18  || $element['eduDoc']['cat1Id'] == 41  ) {
     //10: 2-out 교육일지
 ?>
     <div class="print_page newTable"  style="padding:0px 50px ;position:relative;">

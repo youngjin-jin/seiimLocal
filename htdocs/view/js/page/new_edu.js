@@ -139,6 +139,18 @@ $('#add_form').on('submit', function() {
 	var constructType	 = $('#constructType').val();
 	var eduPlace		 = $('#eduPlace').val();
 	var instructor		 = $('#instructor').val();
+	var foredu		 	 = $('#foredu').val();
+	var eduType = new Array();		
+	$(".eduType").each(function() { 			
+		if($(this).is(":checked"))
+		{
+			eduType.push($(this).val());
+		}			
+	});	
+
+
+
+
 	var doc				 = quill.container.firstChild.innerHTML;
 
 	if (doc == '<p><br></p>') doc = '';
@@ -169,6 +181,11 @@ $('#add_form').on('submit', function() {
 		$('#endTime').focus();
 		return false;
 	}
+	if(eduType.length == 0)
+	{
+		alert("교육방법을 한개이상 선택해주세요");
+		return false;
+	}
 	
 	run_progress();
 	
@@ -177,7 +194,7 @@ $('#add_form').on('submit', function() {
 		url: '/controller/new_edu.php',
 		dataType: 'json',
 		cache: false,
-		data: { 'module' : 'add_form', 'siteId' : siteId, 'cat1' : cat1, 'cat2' : cat2, 'eduName' : eduName, 'eduDate' : eduDate, 'startTime' : startTime, 'endTime' : endTime, 'constructType' : constructType, 'eduPlace' : eduPlace, 'instructor' : instructor, 'doc' : doc },
+		data: { 'module' : 'add_form', 'siteId' : siteId, 'cat1' : cat1, 'cat2' : cat2, 'eduName' : eduName, 'eduDate' : eduDate, 'startTime' : startTime, 'endTime' : endTime, 'constructType' : constructType, 'eduPlace' : eduPlace, 'instructor' : instructor, 'doc' : doc, 'foredu' : foredu, 'eduType' : eduType },
 		success : function(response) {
 			stop_progress();
 			//console.log(response);

@@ -682,10 +682,7 @@ $('#add_form').on('submit', function () {
 			alert(input6_name+' '+_lc['txt']['입력하세요']);
 			return false;
 		}
-		if (!input7) {
-			alert(input7_name+' '+_lc['txt']['입력하세요']);
-			return false;
-		}
+		
 		var content = { 
 			"input1_name"	 : input1_name,
 			"input1"		 : input1,
@@ -808,11 +805,7 @@ $('#add_form').on('submit', function () {
 			alert(input2_name+' '+_lc['txt']['입력하세요']);			
 			return false;
 		}
-		if(!input3)
-		{
-			alert(input3_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
+
 		if(!input4)
 		{
 			alert(input4_name+' '+_lc['txt']['입력하세요']);			
@@ -1479,6 +1472,7 @@ $('#add_form').on('submit', function () {
 		
 	}
 	else if (templateType == '13') {
+		/*
 		var input1_name	 	 = $('#input1_name').text();	
 		var input1		 	 = $('input:radio[name="input1"]:checked').val();
 		var input2_name	 	 = $('#input2_name').text();	
@@ -1489,7 +1483,9 @@ $('#add_form').on('submit', function () {
 		var input4		 	 = $('input:radio[name="input4"]:checked').val();
 		var input5_name	 	 = $('#input5_name').text();	
 		var input5		 	 = $('input:radio[name="input5"]:checked').val();		
+		*/
 		var imgPathurl 	 	 = $('#imgPathurl').val();
+		/*
 		var input6_name		 = $('#input6_name').text();	
 		var input6		 	 = $('#input6').val();
 		var input7_name		 = $('#input7_name').text();	
@@ -1502,11 +1498,13 @@ $('#add_form').on('submit', function () {
 		var input10			 = $('#input10').val();
 		var input11_name	 = $('#input11_name').text();	
 		var input11			 = $('#input11').val();
-		if(!input1)
+		*/
+		if(!imgPathurl)
 		{
-			alert(input1_name+' '+_lc['txt']['입력하세요']);			
+			alert('■ 혈압용지 사진 첨부를 선택해 주세요');			
 			return false;
 		}
+		/*
 		if(!input2)
 		{
 			alert(input2_name+' '+_lc['txt']['입력하세요']);			
@@ -1557,6 +1555,8 @@ $('#add_form').on('submit', function () {
 			alert(input11_name+' '+_lc['txt']['입력하세요']);			
 			return false;
 		}
+		*/
+		/*
 		var content = {
 			"input1_name"	:	input1_name,
 			"input1"		:	input1,
@@ -1581,6 +1581,10 @@ $('#add_form').on('submit', function () {
 			"input10"		:	input10,
 			"input11_name"	:	input11_name,
 			"input11"		:	input11
+		};
+		*/
+		var content = {			
+			"imgPathurl"	:	imgPathurl
 		};
 
 

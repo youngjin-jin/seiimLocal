@@ -49,6 +49,36 @@ include_once('_head.php');
 	<div id="content">
 		<div class="container">
 			<div class="new-edu">
+				
+				<p class="tit v2 mb6 mt20">교육명</p>
+				<div class="inp-wrap">
+					<div class="inp-item"><input type="text" name="eduName" id="eduName" value="<?php echo clean_xss_tags($_GET['eduName'])?>" placeholder="교육명" autocomplete="off" minlength="2" maxlength="30" required></div>
+				</div>
+				<p class="tit v2 mb6 mt20">교육대상</p>
+				<div class="inp-wrap">
+					<div class="inp-item"><input type="text" name="foredu" id="foredu" value="<?php echo clean_xss_tags($_GET['eduName'])?>" placeholder="교육명" autocomplete="off" minlength="2" maxlength="30" required></div>
+				</div>
+				<p class="tit v2 mb6 mt20">교육방법</p>
+				<div class="inp-wrap">
+					<div class="inp-item">
+						<label for="inp-how-1">
+							<input type="checkbox" name="eduType" id="inp-how-1" value="강의식" class='eduType'>
+							<p class="txt">강의식</p>
+						</label>
+						<label for="inp-how-2">
+							<input type="checkbox" name="eduType" id="inp-how-2" value="토의식" class='eduType'>
+							<p class="txt">토의식</p>
+						</label>
+						<label for="inp-how-3">
+							<input type="checkbox" name="eduType" id="inp-how-3" value="시청각" class='eduType'>
+							<p class="txt">시청각</p>
+						</label>
+						<label for="inp-how-4">
+							<input type="checkbox" name="eduType" id="inp-how-4" value="기타" class='eduType'>
+							<p class="txt">기 타</p>
+						</label>
+					</div>
+				</div>
 				<p class="tit v2 mb6">교육종류</p>
 				<div class="inp-wrap">
 					<div class="inp-item">
@@ -61,13 +91,14 @@ include_once('_head.php');
 						<select name="cat2" id="cat2" required disabled></select>
 					</div>
 				</div>
-				<p class="tit v2 mb6 mt20">교육명</p>
-				<div class="inp-wrap">
-					<div class="inp-item"><input type="text" name="eduName" id="eduName" value="<?php echo clean_xss_tags($_GET['eduName'])?>" placeholder="교육명" autocomplete="off" minlength="2" maxlength="30" required></div>
-				</div>
+				
 				<p class="tit v2 mb6 mt20">교육일</p>
 				<div class="inp-wrap">
 					<div class="inp-item calendar date" target="eduDate"><input type="text" name="eduDate" id="eduDate" placeholder="교육일" disabled style="background-color:#fff;" required></div>
+				</div>
+				<p class="tit v2 mb6 mt20">교육장소</p>
+				<div class="inp-wrap">
+					<div class="inp-item"><input type="text" name="eduPlace" id="eduPlace" value="<?php echo clean_xss_tags($_GET['eduPlace'])?>" placeholder="교육장소" autocomplete="off" minlength="2" maxlength="30" required></div>
 				</div>
 				<div class="fx mt20">
 					<div class="fx1">
@@ -87,15 +118,12 @@ include_once('_head.php');
 				<div class="inp-wrap">
 					<div class="inp-item"><input type="text" name="constructType" id="constructType" value="<?php echo clean_xss_tags($_GET['constructType'])?>" placeholder="공종" autocomplete="off" minlength="2" maxlength="30" required></div>
 				</div>
-				<p class="tit v2 mb6 mt20">교육장소</p>
-				<div class="inp-wrap">
-					<div class="inp-item"><input type="text" name="eduPlace" id="eduPlace" value="<?php echo clean_xss_tags($_GET['eduPlace'])?>" placeholder="교육장소" autocomplete="off" minlength="2" maxlength="30" required></div>
-				</div>
+				
 				<p class="tit v2 mb6 mt20">교육강사</p>
 				<div class="inp-wrap">
 					<div class="inp-item"><input type="text" name="instructor" id="instructor" value="<?php echo clean_xss_tags($_GET['instructor'])?>" placeholder="교육강사" autocomplete="off" minlength="2" maxlength="30" required></div>
 				</div>
-				<p class="tit v2 mb6 mt20">비고</p>
+				<p class="tit v2 mb6 mt20">비고(교육내용)</p>
 				<div class="inp-wrap">
 					<div class="inp-item"><div id="doc" style="border-radius:8px;background-color:#fff;min-height:150px;"></div></div>
 				</div>

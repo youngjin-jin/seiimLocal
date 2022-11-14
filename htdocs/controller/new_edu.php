@@ -91,7 +91,8 @@ if ($_POST['module'] == 'add_form') {
 	$eduPlace		 = clean_xss_tags($_POST['eduPlace']);
 	$instructor		 = clean_xss_tags($_POST['instructor']);
 	$doc			 = clean_xss_tags($_POST['doc']);
-	
+	$foredu			 = clean_xss_tags($_POST['foredu']);
+	$eduType 		 = json_encode(clean_xss_tags($_POST['eduType']));
 	$curl_data = array(
 		'siteId'=>$siteId,
 		'cat1'=>$cat1,
@@ -103,7 +104,9 @@ if ($_POST['module'] == 'add_form') {
 		'constructType'=>$constructType,
 		'eduPlace'=>$eduPlace,
 		'instructor'=>$instructor,
-		'doc'=>$doc
+		'doc'=>$doc,
+		'foredu' => $foredu,
+		'eduType' => $eduType
 	);
 	
 	//echo print_r($curl_data);exit;

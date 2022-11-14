@@ -323,6 +323,8 @@ if ($element['eduDoc']['cat1Id'] == 95) {
 	} ?>
 
 	</div>
+	
+
 
 	<!-- asdf -->
 	
@@ -381,6 +383,15 @@ if (count($element['mgrDoc']) > 0) {
 				$emergencyWho = $val['content']['input17'];
 
 				$upDateMd = $val['updatedAt'];
+
+
+				$kkk = $val['content']['input1'];
+
+
+
+
+
+
 
 
 				
@@ -489,6 +500,9 @@ if (count($element['mgrDoc']) > 0) {
 				$straight = $val['content']['input11'];
 
 				$upDatemtest = $val['updatedAt'];
+
+				$bloodImgs = $val['content']['imgPathurl'];
+
 
 				
 			}
@@ -726,6 +740,11 @@ if (count($element['mgrDoc']) > 0) {
 		
 	</div>
 	<!--신규채용자 문서끝-->
+
+
+
+
+	<?php if($kkk == "A"){ ?>
 	<!--자율안전서약서(신규근로자) 문서-->
 	<div class="print_page" style="padding:0px 0;">
 		<img src="/view/images/dl_doc/dl_doc_03.jpg" style="margin:0 auto;width:100%">
@@ -774,6 +793,7 @@ if (count($element['mgrDoc']) > 0) {
 		
 	</div>
 	<!--동의서 문서끝-->
+	<?php } else { ?>
 	<!--자율안전서약서(신규장비) 문서-->
 	<div class="print_page" style="padding:0px 0;">
 		<img src="/view/images/dl_doc/dl_doc_05.jpg" style="margin:0 auto;width:100%">
@@ -818,6 +838,7 @@ if (count($element['mgrDoc']) > 0) {
 		<span class="p6 sname"><?php echo $mgrDoc['userInfo']['name'] ?> <img src="<?php echo $userSign; ?>" alt=""></span>
 	</div>
 	<!--동의서(신규장비) 문서끝-->
+	<?php } ?>
 	<!--근골격계질환 증상조사표 문서-->
 	<div class="print_page" style="padding:0px 0;">
 		<img src="/view/images/dl_doc/dl_doc_07.jpg" style="margin:0 auto;width:100%">
@@ -1227,6 +1248,7 @@ if (count($element['mgrDoc']) > 0) {
 	</div>
 	<!--근골격계질환 증상조사표 문서끝-->
 	<!--간이 건강검진표 문서-->
+	<!--
 	<div class="print_page" style="padding:0px 0;">
 		<img src="/view/images/dl_doc/dl_doc_09.png" style="margin:0 auto;width:100%">
 		<div class="p9 pwrap" style="position: absolute;top:250px;left:226px;">
@@ -1253,7 +1275,6 @@ if (count($element['mgrDoc']) > 0) {
 					<span class="ftel"><?php echo $emergencyPhone; ?></span>
 				</div>
 			</div>	
-			<!--2번-->		
 			<div class="he2">
 				<div class="row" style="height:45px;width:100%;">
 					<span class="year"><?php echo $nowWorkyear; ?></span>
@@ -1285,7 +1306,6 @@ if (count($element['mgrDoc']) > 0) {
 					<?php if($healthNow == "Low"){ ?><span class="bad"></span><?php } ?>	
 				</div>
 			</div>
-			<!--3번-->
 			<div class="he3">
 				<div class="row test01">
 					<div class="num"><?php echo $blood_min; ?> ~ <?php echo $blood_max; ?></div>
@@ -1342,6 +1362,8 @@ if (count($element['mgrDoc']) > 0) {
 			
 		</div>
 	</div>
+	-->
+
 	<!--간이 건강검진표 문서끝-->
 	<!--근로자 자기보호권 문서-->
 	<div class="print_page" style="padding:0px 0;">

@@ -363,9 +363,12 @@ $curl_response = json_decode($curl_response, true);
 				include("print_old.php");
 			} else if ($element['eduDoc']['siteId'] == 4256564307) {
 				include("print_dl.php");
-			} else {
+			} else if ($element['eduDoc']['siteId'] == 1037548003) {
 				//신형
 				include("print_new.php");
+			} else {
+				//구형
+				include("print_old.php");
 			}
 		} else {
 			// 대림 현장(세종안성)의 경우로 한정 

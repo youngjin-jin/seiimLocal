@@ -732,6 +732,7 @@ var safety_data = (function () {
 					}
 					else if(response.list.templateType == 13)
 					{
+						/*
 						$(":radio[name='input1']").each(function() {  
 							var $this = $(this);  
 							if($this.val() == response.list.content.input1){
@@ -768,6 +769,7 @@ var safety_data = (function () {
 						$("#input9").val(response.list.content.input9);
 						$("#input10").val(response.list.content.input10);
 						$("#input11").val(response.list.content.input11);
+						*/
 						$("#previewImg").attr("src", response.list.content.imgPathurl);						
 						$("#imgPathurl").val(response.list.content.imgPathurl);		
 					}
@@ -1341,10 +1343,6 @@ $('#add_form').on('submit', function () {
 			alert(input6_name+' '+_lc['txt']['입력하세요']);
 			return false;
 		}
-		if (!input7) {
-			alert(input7_name+' '+_lc['txt']['입력하세요']);
-			return false;
-		}
 		var content = { 
 			"input1_name"	 : input1_name,
 			"input1"		 : input1,
@@ -1467,11 +1465,7 @@ $('#add_form').on('submit', function () {
 			alert(input2_name+' '+_lc['txt']['입력하세요']);			
 			return false;
 		}
-		if(!input3)
-		{
-			alert(input3_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
+
 		if(!input4)
 		{
 			alert(input4_name+' '+_lc['txt']['입력하세요']);			
@@ -2138,108 +2132,15 @@ $('#add_form').on('submit', function () {
 		
 	}
 	else if (templateType == '13') {
-		var input1_name	 	 = $('#input1_name').text();	
-		var input1		 	 = $('input:radio[name="input1"]:checked').val();
-		var input2_name	 	 = $('#input2_name').text();	
-		var input2		 	 = $('input:radio[name="input2"]:checked').val();
-		var input3_name	 	 = $('#input3_name').text();	
-		var input3		 	 = $('input:radio[name="input3"]:checked').val();
-		var input4_name	 	 = $('#input4_name').text();	
-		var input4		 	 = $('input:radio[name="input4"]:checked').val();
-		var input5_name	 	 = $('#input5_name').text();	
-		var input5		 	 = $('input:radio[name="input5"]:checked').val();		
 		var imgPathurl 	 	 = $('#imgPathurl').val();
-		var input6_name		 = $('#input6_name').text();	
-		var input6		 	 = $('#input6').val();
-		var input7_name		 = $('#input7_name').text();	
-		var input7		 	 = $('#input7').val();
-		var input8_name		 = $('#input8_name').text();	
-		var input8		 	 = $('#input8').val();
-		var input9_name		 = $('#input9_name').text();	
-		var input9			 = $('#input9').val();
-		var input10_name	 = $('#input10_name').text();	
-		var input10			 = $('#input10').val();
-		var input11_name	 = $('#input11_name').text();	
-		var input11			 = $('#input11').val();
-		if(!input1)
+
+		if(!imgPathurl)
 		{
-			alert(input1_name+' '+_lc['txt']['입력하세요']);			
+			alert('■ 혈압용지 사진 첨부를 선택해 주세요');			
 			return false;
 		}
-		if(!input2)
-		{
-			alert(input2_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		if(!input3)
-		{
-			alert(input3_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		if(!input4)
-		{
-			alert(input4_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		if(!input5)
-		{
-			alert(input5_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		if(!input6)
-		{
-			alert(input6_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		if(!input7)
-		{
-			alert(input7_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		if(!input8)
-		{
-			alert(input8_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		if(!input9)
-		{
-			alert(input9_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		if(!input10)
-		{
-			alert(input10_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		if(!input11)
-		{
-			alert(input11_name+' '+_lc['txt']['입력하세요']);			
-			return false;
-		}
-		var content = {
-			"input1_name"	:	input1_name,
-			"input1"		:	input1,
-			"input2_name"	:	input2_name,
-			"input2"		:	input2,
-			"input3_name"	:	input3_name,
-			"input3"		:	input3,
-			"input4_name"	:	input4_name,
-			"input4"		:	input4,
-			"input5_name"	:	input5_name,
-			"input5"		:	input5,
-			"imgPathurl"	:	imgPathurl,
-			"input6_name"	:	input6_name,
-			"input6"		:	input6,
-			"input7_name"	:	input7_name,
-			"input7"		:	input7,
-			"input8_name"	:	input8_name,
-			"input8"		:	input8,
-			"input9_name"	:	input9_name,
-			"input9"		:	input9,
-			"input10_name"	:	input10_name,
-			"input10"		:	input10,
-			"input11_name"	:	input11_name,
-			"input11"		:	input11
+		var content = {			
+			"imgPathurl"	:	imgPathurl
 		};
 	}
 	run_progress();	

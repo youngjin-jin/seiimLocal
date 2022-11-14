@@ -3040,6 +3040,7 @@ include_once('_head.php');
 	<!-- 간이 건강검진표 -->				
 	<?php } else if (clean_xss_tags($_GET['templateType']) == '13') { ?>
 			<div class="bloodWrap">
+				<!--
 				<p class="tit v2" id="">Ⅰ. 근무경력 / 과거병력 </p>
 
 				<p class="tit v2 mb6 mt20" id="input1_name"><?php echo $_lc['TXT']['과거작업중재해유무']?></p>
@@ -3153,6 +3154,7 @@ include_once('_head.php');
 						</label>
 					</div>
 				</div>
+				-->
 
 
 
@@ -3170,9 +3172,9 @@ include_once('_head.php');
 				</div>
 				<input type='hidden' id='imgPathurl' value='' />
 				
+				
 
-
-				<!--혈압-->
+				<!--혈압
 				<p class="tit v2 mb6 mt20">■ <?php echo $_lc['TXT']['혈압측정치']?></p>
 				<p class="rowInput mb6">
 					<span id='input6_name'><?php echo $_lc['TXT']['최고(수축)']?></span>
@@ -3188,7 +3190,7 @@ include_once('_head.php');
 					<p>1) <?php echo $_lc['TXT']['집중관리대상']?></p>
 					<p>2) <?php echo $_lc['TXT']['일반관리대상']?></p>
 				</div>
-				<!--공복혈당-->
+				<!--공복혈당
 
 				<p class="tit v2 mb6 mt20">■ 공복혈당</p>
 				<p class="rowInput">
@@ -3201,26 +3203,27 @@ include_once('_head.php');
 					<p>1) 100-125 (경계)</p>
 					<p>2) 126이상 (질환의심)</p>
 				</div>
-				<!--눈감고 한발서기-->
+				<!--눈감고 한발서기
 				<p class="tit v2 mb6 mt20">■ 눈감고 한발로 서기</p>
 				<p class="rowInput">
 					<span id='input9_name'>한발서기</span>
 					<input type="number" id="input9" name="input9" value="" placeholder="초" />
 				</p>
 
-				<!--눈감고 제자리걷기-->
+				<!--눈감고 제자리걷기
 				<p class="tit v2 mb6 mt20">■ 눈감고 제자리걷기</p>
 				<p class="rowInput">
 					<span id='input10_name'>제자리걷기</span>
 					<input type="number" id="input10" name="input10" value="" placeholder="cm" />
 				</p>
 
-				<!--직선보행검사-->
+				<!--직선보행검사
 				<p class="tit v2 mb6 mt20">■ 직선보행 검사</p>
 				<p class="rowInput">
 					<span id='input11_name'>직선보행</span>
 					<input type="number" id="input11" name="input11" value="" placeholder="m" />
 				</p>
+				-->
 
 				
 			</div>

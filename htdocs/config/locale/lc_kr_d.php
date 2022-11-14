@@ -337,7 +337,7 @@ $templateType9 = '안전수칙준수 서약서';
 $templateType10 = '기초안전보건 테스트';
 $templateType11 = '면접 및 면담 진행현황';
 $templateType12 = '근골격계질환 증상조사서';
-$templateType13= '간이 건강검진표';
+$templateType13= '혈압용지 첨부';
 
 
 

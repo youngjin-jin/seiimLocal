@@ -248,26 +248,26 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6" id="input1_name"><?php echo $_lc['TXT']['혈액형']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input1_1">
-							<input type="radio" name="input1" id="input1_1" value="A" >
+						<label for="input1_3_1">
+							<input type="radio" name="input1" id="input1_3_1" value="A" >
 							<p class="txt">A</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input1_2">
-							<input type="radio" name="input1" id="input1_2" value="B" >
+						<label for="input1_3_2">
+							<input type="radio" name="input1" id="input1_3_2" value="B" >
 							<p class="txt">B</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input1_3">
-							<input type="radio" name="input1" id="input1_3" value="O" >
+						<label for="input1_3_3">
+							<input type="radio" name="input1" id="input1_3_3" value="O" >
 							<p class="txt">O</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input1_4">
-							<input type="radio" name="input1" id="input1_4" value="AB" >
+						<label for="input1_3_4">
+							<input type="radio" name="input1" id="input1_3_4" value="AB" >
 							<p class="txt">AB</p>
 						</label>
 					</div>
@@ -275,14 +275,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input2_name"><?php echo $_lc['TXT']['기초체력이상유무']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input2_1">
-							<input type="radio" name="input2" id="input2_1" value="O" >
+						<label for="input2_3_1">
+							<input type="radio" name="input2" id="input2_3_1" value="O" >
 							<p class="txt"><?php echo $_lc['TXT']['유']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input2_2">
-							<input type="radio" name="input2" id="input2_2" value="X" >
+						<label for="input2_3_2">
+							<input type="radio" name="input2" id="input2_3_2" value="X" >
 							<p class="txt"><?php echo $_lc['TXT']['무']?></p>
 						</label>
 					</div>
@@ -290,20 +290,20 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input3_name"><?php echo $_lc['TXT']['기초체력']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input3_1">
-							<input type="radio" name="input3" id="input3_1" value="High" >
+						<label for="input3_3_1">
+							<input type="radio" name="input3" id="input3_3_1" value="High" >
 							<p class="txt"><?php echo $_lc['TXT']['상']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input3_2">
-							<input type="radio" name="input3" id="input3_2" value="Middle" >
+						<label for="input3_3_2">
+							<input type="radio" name="input3" id="input3_3_2" value="Middle" >
 							<p class="txt"><?php echo $_lc['TXT']['중']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input3_2">
-							<input type="radio" name="input3" id="input3_2" value="Low" >
+						<label for="input3_3_2">
+							<input type="radio" name="input3" id="input3_3_2" value="Low" >
 							<p class="txt"><?php echo $_lc['TXT']['하']?></p>
 						</label>
 					</div>
@@ -311,14 +311,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input4_name"><?php echo $_lc['TXT']['과거병력수술유무']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input4_1">
-							<input type="radio" name="input4" id="input4_1" value="O" >
+						<label for="input4_3_1">
+							<input type="radio" name="input4" id="input4_3_1" value="O" >
 							<p class="txt"><?php echo $_lc['TXT']['유']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input4_2">
-							<input type="radio" name="input4" id="input4_2" value="X" >
+						<label for="input4_3_2">
+							<input type="radio" name="input4" id="input4_3_2" value="X" >
 							<p class="txt"><?php echo $_lc['TXT']['무']?></p>
 						</label>
 					</div>
@@ -330,14 +330,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input5_name"><?php echo $_lc['TXT']['산재유무']?>산재유무</p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input5_1">
-							<input type="radio" name="input5" id="input5_1" value="O" >
+						<label for="input5_3_1">
+							<input type="radio" name="input5" id="input5_3_1" value="O" >
 							<p class="txt"><?php echo $_lc['TXT']['유']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input5_2">
-							<input type="radio" name="input5" id="input5_2" value="X" >
+						<label for="input5_3_2">
+							<input type="radio" name="input5" id="input5_3_2" value="X" >
 							<p class="txt"><?php echo $_lc['TXT']['무']?></p>
 						</label>
 					</div>
@@ -587,20 +587,20 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input9_name"><?php echo $_lc['TXT']['현재건강상태']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input9_1">
-							<input type="radio" name="input9" id="input9_1" value="High">
+						<label for="input9_6_1">
+							<input type="radio" name="input9" id="input9_6_1" value="High">
 							<p class="txt"><?php echo $_lc['TXT']['좋음']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input9_2">
-							<input type="radio" name="input9" id="input9_2" value="Middle">
+						<label for="input9_6_2">
+							<input type="radio" name="input9" id="input9_6_2" value="Middle">
 							<p class="txt"><?php echo $_lc['TXT']['보통']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input9_3">
-							<input type="radio" name="input9" id="input9_3" value="Low">
+						<label for="input9_6_3">
+							<input type="radio" name="input9" id="input9_6_3" value="Low">
 							<p class="txt"><?php echo $_lc['TXT']['안좋음']?></p>
 						</label>
 					</div>
@@ -610,26 +610,26 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input10_name"><?php echo $_lc['TXT']['혈액형']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input10_1">
-							<input type="radio" name="input10" id="input10_1" value="A">
+						<label for="input10_6_1">
+							<input type="radio" name="input10" id="input10_6_1" value="A">
 							<p class="txt">A</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input10_2">
-							<input type="radio" name="input10" id="input10_2" value="B">
+						<label for="input10_6_2">
+							<input type="radio" name="input10" id="input10_6_2" value="B">
 							<p class="txt">B</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input10_3">
-							<input type="radio" name="input10" id="input10_3" value="O">
+						<label for="input10_6_3">
+							<input type="radio" name="input10" id="input10_6_3" value="O">
 							<p class="txt">O</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input10_4">
-							<input type="radio" name="input10" id="input10_4" value="AB">
+						<label for="input10_6_4">
+							<input type="radio" name="input10" id="input10_6_4" value="AB">
 							<p class="txt">AB</p>
 						</label>
 					</div>
@@ -647,14 +647,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input13_name"><?php echo $_lc['TXT']['과거작업중재해유무']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input13_1">
-							<input type="radio" name="input13" id="input13_1" value="O">
+						<label for="input13_6_1">
+							<input type="radio" name="input13" id="input13_6_1" value="O">
 							<p class="txt"><?php echo $_lc['TXT']['있다']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input13_2">
-							<input type="radio" name="input13" id="input13_2" value="X">
+						<label for="input13_6_2">
+							<input type="radio" name="input13" id="input13_6_2" value="X">
 							<p class="txt"><?php echo $_lc['TXT']['없다']?></p>
 						</label>
 					</div>
@@ -662,14 +662,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input14_name"><?php echo $_lc['TXT']['있다면과거에산재처리를한적이있습니까']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input14_1">
-							<input type="radio" name="input14" id="input14_1" value="O">
+						<label for="input14_6_1">
+							<input type="radio" name="input14" id="input14_6_1" value="O">
 							<p class="txt"><?php echo $_lc['TXT']['있다']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input14_2">
-							<input type="radio" name="input14" id="input14_2" value="X">
+						<label for="input14_6_2">
+							<input type="radio" name="input14" id="input14_6_2" value="X">
 							<p class="txt"><?php echo $_lc['TXT']['없다']?></p>
 						</label>
 					</div>
@@ -682,38 +682,38 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input16_name"><?php echo $_lc['TXT']['의사에게주의받은병이있습니까']?></p>
 				<div class="inp-wrap radio_overwrap">
 					<div class="inp-item radio">
-						<label for="input16_1">
-							<input type="radio" name="input16" id="input16_1" value="hbp">
+						<label for="input16_6_1">
+							<input type="radio" name="input16" id="input16_6_1" value="hbp">
 							<p class="txt"><?php echo $_lc['TXT']['있다고혈압']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input16_2">
-							<input type="radio" name="input16" id="input16_2" value="heart">
+						<label for="input16_6_2">
+							<input type="radio" name="input16" id="input16_6_2" value="heart">
 							<p class="txt"><?php echo $_lc['TXT']['있다심장']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input16_3">
-							<input type="radio" name="input16" id="input16_3" value="diabetes">
+						<label for="input16_6_3">
+							<input type="radio" name="input16" id="input16_6_3" value="diabetes">
 							<p class="txt"><?php echo $_lc['TXT']['있다당뇨']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input16_4">
-							<input type="radio" name="input16" id="input16_4" value="disc">
+						<label for="input16_6_4">
+							<input type="radio" name="input16" id="input16_6_4" value="disc">
 							<p class="txt"><?php echo $_lc['TXT']['있다디스크']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input16_5">
-							<input type="radio" name="input16" id="input16_5" value="etcs">
+						<label for="input16_6_5">
+							<input type="radio" name="input16" id="input16_6_5" value="etcs">
 							<p class="txt"><?php echo $_lc['TXT']['있다기타']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input16_6">
-							<input type="radio" name="input16" id="input16_6" value="X">
+						<label for="input16_6_6">
+							<input type="radio" name="input16" id="input16_6_6" value="X">
 							<p class="txt"><?php echo $_lc['TXT']['없다']?></p>
 						</label>
 					</div>
@@ -1342,14 +1342,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6" id="input1_name">신규 타입선택</p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input1_1">
-							<input type="radio" name="input1" id="input1_1" value="A" class='selectRadio'>
+						<label for="input1_11_1">
+							<input type="radio" name="input1" id="input1_11_1" value="A" class='selectRadio'>
 							<p class="txt">신규 근로자</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input1_2">
-							<input type="radio" name="input1" id="input1_2" value="B" class='selectRadio'>
+						<label for="input1_11_2">
+							<input type="radio" name="input1" id="input1_11_2" value="B" class='selectRadio'>
 							<p class="txt">신규 장비</p>
 						</label>
 					</div>
@@ -1369,26 +1369,26 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6" id="input4_name"><?php echo $_lc['TXT']['혈액형']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input4_1">
-							<input type="radio" name="input4" id="input4_1" value="A">
+						<label for="input4_11_1">
+							<input type="radio" name="input4" id="input4_11_1" value="A">
 							<p class="txt">A</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input4_2">
-							<input type="radio" name="input4" id="input4_2" value="B">
+						<label for="input4_11_2">
+							<input type="radio" name="input4" id="input4_11_2" value="B">
 							<p class="txt">B</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input4_3">
-							<input type="radio" name="input4" id="input4_3" value="O">
+						<label for="input4_11_3">
+							<input type="radio" name="input4" id="input4_11_3" value="O">
 							<p class="txt">O</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input4_4">
-							<input type="radio" name="input4" id="input4_4" value="AB">
+						<label for="input4_11_4">
+							<input type="radio" name="input4" id="input4_11_4" value="AB">
 							<p class="txt">AB</p>
 						</label>
 					</div>
@@ -1396,14 +1396,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input5_name"><?php echo $_lc['TXT']['기초체력이상유무']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input2_1">
-							<input type="radio" name="input5" id="input2_1" value="O">
+						<label for="input2_11_1">
+							<input type="radio" name="input5" id="input2_11_1" value="O">
 							<p class="txt"><?php echo $_lc['TXT']['유']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input2_2">
-							<input type="radio" name="input5" id="input2_2" value="X">
+						<label for="input2_11_2">
+							<input type="radio" name="input5" id="input2_11_2" value="X">
 							<p class="txt"><?php echo $_lc['TXT']['무']?></p>
 						</label>
 					</div>
@@ -1415,20 +1415,20 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input6_name"><?php echo $_lc['TXT']['기초체력']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input6_1">
-							<input type="radio" name="input6" id="input6_1" value="High">
+						<label for="input6_11_1">
+							<input type="radio" name="input6" id="input6_11_1" value="High">
 							<p class="txt"><?php echo $_lc['TXT']['상']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input6_2">
-							<input type="radio" name="input6" id="input6_2" value="Middle">
+						<label for="input6_11_2">
+							<input type="radio" name="input6" id="input6_11_2" value="Middle">
 							<p class="txt"><?php echo $_lc['TXT']['중']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input6_2">
-							<input type="radio" name="input6" id="input6_2" value="Low">
+						<label for="input6_11_3">
+							<input type="radio" name="input6" id="input6_11_3" value="Low">
 							<p class="txt"><?php echo $_lc['TXT']['하']?></p>
 						</label>
 					</div>
@@ -1436,14 +1436,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input7_name"><?php echo $_lc['TXT']['과거병력수술유무']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input7_1">
-							<input type="radio" name="input7" id="input7_1" value="O">
+						<label for="input7_11_1">
+							<input type="radio" name="input7" id="input7_11_1" value="O">
 							<p class="txt"><?php echo $_lc['TXT']['유']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input7_2">
-							<input type="radio" name="input7" id="input7_2" value="X">
+						<label for="input7_11_2">
+							<input type="radio" name="input7" id="input7_11_2" value="X">
 							<p class="txt"><?php echo $_lc['TXT']['무']?></p>
 						</label>
 					</div>
@@ -1455,14 +1455,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input9_name"><?php echo $_lc['TXT']['산재유무']?></p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input9_1">
-							<input type="radio" name="input9" id="input9_1" value="O">
+						<label for="input9_11_1">
+							<input type="radio" name="input9" id="input9_11_1" value="O">
 							<p class="txt"><?php echo $_lc['TXT']['유']?></p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input9_2">
-							<input type="radio" name="input9" id="input9_2" value="X">
+						<label for="input9_11_2">
+							<input type="radio" name="input9" id="input9_11_2" value="X">
 							<p class="txt"><?php echo $_lc['TXT']['무']?></p>
 						</label>
 					</div>
@@ -1543,39 +1543,39 @@ include_once('_page_top.php');
 
 				<p class="tit v2 mb6 mt20" id="input4_name">1. 규칙적인(한번에 30분 이상, 1주일에 적어도 2,3회 이상) 여가 및 취미활동을 하고 계시는 곳에 표시하여 주십시오.</p>
 				<div class="inp-item radio">
-					<label for="input4_1_1">
-						<input type="radio" name="input4_1" id="input4_1_1" value="컴퓨터 관련활동">
+					<label for="input4_12_1">
+						<input type="radio" name="input4_1" id="input4_12_1" value="컴퓨터 관련활동">
 						<p class="txt">컴퓨터 관련활동</p>
 					</label>
 				</div>
 				<div class="inp-item radio">
-					<label for="input4_1_2">
-						<input type="radio" name="input4_1" id="input4_1_2" value="악기연주(피아노, 바이올린 등)">
+					<label for="input4_12_2">
+						<input type="radio" name="input4_1" id="input4_12_2" value="악기연주(피아노, 바이올린 등)">
 						<p class="txt">악기연주(피아노, 바이올린 등)</p>
 					</label>
 				</div>
 				<div class="inp-item radio">
-					<label for="input4_1_3">
-						<input type="radio" name="input4_1" id="input4_1_3" value="테니스/배드민턴/스쿼시">
+					<label for="input4_12_3">
+						<input type="radio" name="input4_1" id="input4_12_3" value="테니스/배드민턴/스쿼시">
 						<p class="txt">테니스/배드민턴/스쿼시</p>
 					</label>
 				</div>
 				<div class="inp-item radio">
-					<label for="input4_1_4">
-						<input type="radio" name="input4_1" id="input4_1_4" value="축구/족구/농구/스키">
+					<label for="input4_12_4">
+						<input type="radio" name="input4_1" id="input4_12_4" value="축구/족구/농구/스키">
 						<p class="txt">축구/족구/농구/스키</p>
 					</label>
 				</div>
 				
 				<div class="inp-item radio">
-					<label for="input4_1_6">
-						<input type="radio" name="input4_1" id="input4_1_6" value="해당사항 없음">
+					<label for="input4_12_6">
+						<input type="radio" name="input4_1" id="input4_12_6" value="해당사항 없음">
 						<p class="txt">해당사항 없음</p>
 					</label>
 				</div>
 				<div class="inp-item radio">
-					<label for="input4_1_5">
-						<input type="radio" name="input4_1" id="input4_1_5" value="기타">
+					<label for="input4_12_5">
+						<input type="radio" name="input4_1" id="input4_12_5" value="기타">
 						<p class="txt">기타</p>						
 					</label>
 					<!--기타 선택시에 아래 input활성화-->
@@ -1585,33 +1585,33 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input5_name">2. 귀하의 하루 평균 가사노동(밥하기, 빨래하기, 청소하기, 2살 미만의 아이 돌보기 등)은 얼마나 됩니까?</p>
 				<div class="col-wrap">
 					<div class="inp-item radio">
-						<label for="input5_1">
-							<input type="radio" name="input5" id="input5_1" value="거의 하지 않는다">
+						<label for="input5_12_1">
+							<input type="radio" name="input5" id="input5_12_1" value="거의 하지 않는다">
 							<p class="txt">거의 하지 않는다</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input5_2">
-							<input type="radio" name="input5" id="input5_2" value="1시간 미만">
+						<label for="input5_12_2">
+							<input type="radio" name="input5" id="input5_12_2" value="1시간 미만">
 							<p class="txt">1시간 미만</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input5_3">
-							<input type="radio" name="input5" id="input5_3" value="1~2시간 미만">
+						<label for="input5_12_3">
+							<input type="radio" name="input5" id="input5_12_3" value="1~2시간 미만">
 							<p class="txt">1~2시간 미만</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input5_4">
-							<input type="radio" name="input5" id="input5_4" value="2-3시간 미만">
+						<label for="input5_12_4">
+							<input type="radio" name="input5" id="input5_12_4" value="2-3시간 미만">
 							<p class="txt">2-3시간 미만</p>
 						</label>
 					</div>
 					
 					<div class="inp-item radio">
-						<label for="input5_6">
-							<input type="radio" name="input5" id="input5_6" value="3시간 이상">
+						<label for="input5_12_6">
+							<input type="radio" name="input5" id="input5_12_6" value="3시간 이상">
 							<p class="txt">3시간 이상</p>
 						</label>
 					</div>
@@ -1621,14 +1621,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input6_name">3. 귀하는 의사로부터 다음과 같은 질병에 대해 진단을 받은 적이 있습니까? (해당 질병에 체크)</p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input6_1_1">
-							<input type="radio" name="input6_1" id="input6_1_1" value="N">
+						<label for="input6_12_1">
+							<input type="radio" name="input6_1" id="input6_12_1" value="N">
 							<p class="txt">아니오</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input6_1_2">
-							<input type="radio" name="input6_1" id="input6_1_2" value="Y">
+						<label for="input6_12_2">
+							<input type="radio" name="input6_1" id="input6_12_2" value="Y">
 							<p class="txt">예</p>
 						</label>
 					</div>
@@ -1638,32 +1638,32 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt10 input_7_area" id="input6_2_name" style='display:none'>(해당 질병에 체크해 주세요.)</p>
 				<div class="inp-wrap input_7_area"  style='display:none'>
 					<div class="inp-item radio">
-						<label for="input6_2_1">
-							<input type="radio" name="input6_2" id="input6_2_1" value="류머티스 관절염">
+						<label for="input6_12_1">
+							<input type="radio" name="input6_2" id="input6_12_1" value="류머티스 관절염">
 							<p class="txt">류머티스 관절염</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input6_2_2">
-							<input type="radio" name="input6_2" id="input6_2_2" value="당뇨병">
+						<label for="input6_12_2">
+							<input type="radio" name="input6_2" id="input6_12_2" value="당뇨병">
 							<p class="txt">당뇨병</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input6_2_3">
-							<input type="radio" name="input6_2" id="input6_2_3" value="루프스병">
+						<label for="input6_12_3">
+							<input type="radio" name="input6_2" id="input6_12_3" value="루프스병">
 							<p class="txt">루프스병</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input6_2_4">
-							<input type="radio" name="input6_2" id="input6_2_4" value="통풍">
+						<label for="input6_12_4">
+							<input type="radio" name="input6_2" id="input6_12_4" value="통풍">
 							<p class="txt">통풍</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input6_2_5">
-							<input type="radio" name="input6_2" id="input6_2_5" value="알코올중독">
+						<label for="input6_12_5">
+							<input type="radio" name="input6_2" id="input6_12_5" value="알코올중독">
 							<p class="txt">알코올중독</p>
 						</label>
 					</div>
@@ -1692,14 +1692,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input7_name">4. 과거에 운동 중 혹은 사고로(교통사고, 넘어짐, 추락 등) 인해 손/손가락/손목, 팔/팔꿈치, 어깨, 목 ,허리, 다리/발 부위를 다친 적이 있습니까?</p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input7_1_1">
-							<input type="radio" name="input7_1" id="input7_1_1" value="N">
+						<label for="input7_12_1">
+							<input type="radio" name="input7_1" id="input7_12_1" value="N">
 							<p class="txt">아니오</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input7_1_2">
-							<input type="radio" name="input7_1" id="input7_1_2" value="Y">
+						<label for="input7_12_2">
+							<input type="radio" name="input7_1" id="input7_12_2" value="Y">
 							<p class="txt">예</p>
 						</label>
 					</div>
@@ -1709,38 +1709,38 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt10 input7_area" style='display:none'>('예'인 경우 상해 부위는?)</p>
 				<div class="col-wrap input7_area" style='display:none'>
 					<div class="inp-item radio">
-						<label for="input7_2_1">
-							<input type="radio" name="input7_2" id="input7_2_1" value="손/손가락/손목">
+						<label for="input7_12_2_1">
+							<input type="radio" name="input7_2" id="input7_12_2_1" value="손/손가락/손목">
 							<p class="txt">손/손가락/손목</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input7_2_2">
-							<input type="radio" name="input7_2" id="input7_2_2" value="팔/팔꿈치">
+						<label for="input7_12_2_2">
+							<input type="radio" name="input7_2" id="input7_12_2_2" value="팔/팔꿈치">
 							<p class="txt">팔/팔꿈치</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input7_2_3">
-							<input type="radio" name="input7_2" id="input7_2_3" value="어깨">
+						<label for="input7_12_2_3">
+							<input type="radio" name="input7_2" id="input7_12_2_3" value="어깨">
 							<p class="txt">어깨</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input7_2_4">
-							<input type="radio" name="input7_2" id="input7_2_4" value="목">
+						<label for="input7_12_2_4">
+							<input type="radio" name="input7_2" id="input7_12_2_4" value="목">
 							<p class="txt">목</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input7_2_5">
-							<input type="radio" name="input7_2" id="input7_2_5" value="허리">
+						<label for="input7_12_2_5">
+							<input type="radio" name="input7_2" id="input7_12_2_5" value="허리">
 							<p class="txt">허리</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input7_2_6">
-							<input type="radio" name="input7_2" id="input7_2_6" value="다리/발">
+						<label for="input7_12_2_6">
+							<input type="radio" name="input7_2" id="input7_12_2_6" value="다리/발">
 							<p class="txt">다리/발</p>
 						</label>
 					</div>
@@ -1751,26 +1751,26 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input8_name">5.  현재 하고 계시는 일의 육체적 부담 정도는 어느 정도라고 생각합니까?</p>
 				<div class="col-wrap">
 					<div class="inp-item radio">
-						<label for="input8_1">
-							<input type="radio" name="input8" id="input8_1" value="전혀 힘들지 않음">
+						<label for="input8_12_1">
+							<input type="radio" name="input8" id="input8_12_1" value="전혀 힘들지 않음">
 							<p class="txt">전혀 힘들지 않음</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input8_2">
-							<input type="radio" name="input8" id="input8_2" value="견딜만 함">
+						<label for="input8_12_2">
+							<input type="radio" name="input8" id="input8_12_2" value="견딜만 함">
 							<p class="txt">견딜만 함</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input8_3">
-							<input type="radio" name="input8" id="input8_3" value="약간 힘듦">
+						<label for="input8_12_3">
+							<input type="radio" name="input8" id="input8_12_3" value="약간 힘듦">
 							<p class="txt">약간 힘듦</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input8_4">
-							<input type="radio" name="input8" id="input8_4" value="매우 힘듦">
+						<label for="input8_12_4">
+							<input type="radio" name="input8" id="input8_12_4" value="매우 힘듦">
 							<p class="txt">매우 힘듦</p>
 						</label>
 					</div>
@@ -1783,14 +1783,14 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt20" id="input9_name">Ⅱ. 지난 1년 동안 손/손가락/손목, 팔/팔꿈치, 어깨, 목, 허리, 다리/발 중 어느 한 부위에서라도 귀하의 작업과 관련하여 통증이나 불편함(통증, 쑤시는 느낌, 뻣뻣함, 화끈거리는 느낌, 무감각 혹은 찌릿찌릿함 등)을 느끼신 적이 있습니까 ?</p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input9_1">
-							<input type="radio" name="input9" id="input9_1" value="N">
+						<label for="input9_12_1">
+							<input type="radio" name="input9" id="input9_12_1" value="N">
 							<p class="txt">아니오(설문종료)</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input9_2">
-							<input type="radio" name="input9" id="input9_2" value="Y">
+						<label for="input9_12_2">
+							<input type="radio" name="input9" id="input9_12_2" value="Y">
 							<p class="txt">예</p>
 						</label>
 					</div>
@@ -1801,38 +1801,38 @@ include_once('_page_top.php');
 				<p class="tit v2 mb6 mt10" id="input10_name">통증 부위</p>
 				<div class="inp-wrap">
 					<div class="inp-item radio">
-						<label for="input10_1">
-							<input type="checkbox" name="input10" id="input10_1" value="목" class='input10'>
+						<label for="input10_12_1">
+							<input type="checkbox" name="input10" id="input10_12_1" value="목" class='input10'>
 							<p class="txt">목</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input10_2">
-							<input type="checkbox" name="input10" id="input10_2" value="어깨" class='input10'>
+						<label for="input10_12_2">
+							<input type="checkbox" name="input10" id="input10_12_2" value="어깨" class='input10'>
 							<p class="txt">어깨</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input10_3">
-							<input type="checkbox" name="input10" id="input10_3" value="팔/팔꿈치" class='input10'>
+						<label for="input10_12_3">
+							<input type="checkbox" name="input10" id="input10_12_3" value="팔/팔꿈치" class='input10'>
 							<p class="txt">팔/팔꿈치</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input10_4">
-							<input type="checkbox" name="input10" id="input10_4" value="손/손목/손가락" class='input10'> 
+						<label for="input10_12_4">
+							<input type="checkbox" name="input10" id="input10_12_4" value="손/손목/손가락" class='input10'> 
 							<p class="txt">손/손목/손가락</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input10_5">
-							<input type="checkbox" name="input10" id="input10_5" value="허리" class='input10'>
+						<label for="input10_12_5">
+							<input type="checkbox" name="input10" id="input10_12_5" value="허리" class='input10'>
 							<p class="txt">허리</p>
 						</label>
 					</div>
 					<div class="inp-item radio">
-						<label for="input10_6">
-							<input type="checkbox" name="input10" id="input10_6" value="다리/발" class='input10'>
+						<label for="input10_12_6">
+							<input type="checkbox" name="input10" id="input10_12_6" value="다리/발" class='input10'>
 							<p class="txt">다리/발</p>
 						</label>
 					</div>
