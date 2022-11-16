@@ -57,3 +57,9 @@ select::-ms-expand{ display: none; }
 *::-webkit-input-placeholder{ color: #858E96; }
 *:-ms-input-placeholder{ color: #858E96; }
 *:-mos-input-placeholder{ color: #858E96; }
+
+ol{list-style: decimal;margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;}

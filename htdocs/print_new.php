@@ -41,7 +41,8 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                 <td colspan="2" style="width:%;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?> (<?php echo substr( $element['eduDoc']['eduTime'], 0, 2 ) ?> 시간)</td>
                 <td colspan="1" class="td_name" style="width:8%;">교육방법</td>
                 <td colspan="4">
-                    <div class="ed_type">
+                    <?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?>
+                    <!--div class="ed_type">
                         <p class="on"><span></span> 강의식</p>
                     </div>
                     <div class="ed_type">
@@ -52,7 +53,7 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                     </div>
                     <div class="ed_type">
                         <p class=""><span></span> 기 타</p>
-                    </div>
+                    </div-->
                 </td>
             </tr>
             <tr class="tr_tt">
@@ -253,7 +254,8 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                 <td colspan="2" style="width:%;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?> (<?php echo substr( $element['eduDoc']['eduTime'], 0, 2 ) ?>)</td>
                 <td colspan="1" class="td_name" style="width:8%;">교육방법</td>
                 <td colspan="4">
-                    <div class="ed_type">
+                <?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?>
+                    <!--div class="ed_type">
                         <p class="on"><span></span> 강의식</p>
                     </div>
                     <div class="ed_type">
@@ -264,7 +266,7 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                     </div>
                     <div class="ed_type">
                         <p class=""><span></span> 기 타</p>
-                    </div>
+                    </div-->
                 </td>
             </tr>
             <tr class="tr_tt">
@@ -464,7 +466,8 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                 <td colspan="2" style="width:%;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?> (<?php echo substr($element['eduDoc']['startTime'], 0, 5) ?> ~ <?php echo substr($element['eduDoc']['endTime'], 0, 5) ?>)</td>
                 <td colspan="1" class="td_name" style="width:8%;">교육방법</td>
                 <td colspan="4">
-                    <div class="ed_type">
+                <?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?>
+                    <!--div class="ed_type">
                         <p class="on"><span></span> 강의식</p>
                     </div>
                     <div class="ed_type">
@@ -475,7 +478,7 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                     </div>
                     <div class="ed_type">
                         <p class=""><span></span> 기 타</p>
-                    </div>
+                    </div-->
                 </td>
             </tr>
             <tr class="tr_tt">
@@ -672,7 +675,8 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                 <td colspan="2" style="width:%;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?> (<?php echo substr($element['eduDoc']['startTime'], 0, 5) ?> ~ <?php echo substr($element['eduDoc']['endTime'], 0, 5) ?>)</td>
                 <td colspan="1" class="td_name" style="width:8%;">교육방법</td>
                 <td colspan="4">
-                    <div class="ed_type">
+                <?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?>
+                    <!--div class="ed_type">
                         <p class="on"><span></span> 강의식</p>
                     </div>
                     <div class="ed_type">
@@ -683,7 +687,7 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                     </div>
                     <div class="ed_type">
                         <p class=""><span></span> 기 타</p>
-                    </div>
+                    </div-->
                 </td>
             </tr>
             <tr class="tr_tt">
@@ -2778,7 +2782,8 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                 <td colspan="2" style="width:%;"><?php echo substr($element['eduDoc']['eduDate'], 0, 10) ?> (<?php echo substr($element['eduDoc']['startTime'], 0, 5) ?> ~ <?php echo substr($element['eduDoc']['endTime'], 0, 5) ?>)</td>
                 <td colspan="1" class="td_name" style="width:8%;">교육방법</td>
                 <td colspan="4">
-                    <div class="ed_type">
+                <?php print_r(implode(",", json_decode($element['eduDoc']['eduType']))); ?>
+                    <!--div class="ed_type">
                         <p class="on"><span></span> 강의식</p>
                     </div>
                     <div class="ed_type">
@@ -2789,7 +2794,7 @@ if ($element['eduDoc']['cat1Id'] == 10 || $element['eduDoc']['cat1Id'] == 1  ) {
                     </div>
                     <div class="ed_type">
                         <p class=""><span></span> 기 타</p>
-                    </div>
+                    </div-->
                 </td>
             </tr>
             <tr class="tr_tt">

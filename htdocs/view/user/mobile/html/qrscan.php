@@ -2,7 +2,7 @@
 include_once($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 include_once('_head.php');
 ?>
-
+<input type="hidden" id="myCompany" value="<?php echo clean_xss_tags($_GET['myCompany'])?>" />
 <!-- header -->
 <div id="header">
 	<div class="inner">

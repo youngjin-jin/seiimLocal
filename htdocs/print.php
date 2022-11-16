@@ -62,7 +62,7 @@ $curl_response = json_decode($curl_response, true);
 	<link href="/view/css/monokai-sublime.css" rel="stylesheet">
 
 	<!-- reset css -->
-	<link href="/view/admin/pc/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="/view/admin/pc/css/reset.css?ver=122" rel="stylesheet" type="text/css">
 	<link href="/view/admin/pc/css/fonts.css" rel="stylesheet" type="text/css">
 
 	<!-- custom css -->
@@ -334,6 +334,11 @@ $curl_response = json_decode($curl_response, true);
 			height: 100px;
 			max-width: 100%;
 		}
+		ul{list-style: disc;    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;}
 
 		@media print {
 

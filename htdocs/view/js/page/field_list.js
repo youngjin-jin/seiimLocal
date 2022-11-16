@@ -147,7 +147,7 @@ var field_list = (function () {
 
 //QR인증 선택 이벤트
 $('#qr_btn').on('click', function () {
-	location.href = 'qrscan.php';
+	location.href = 'qrscan.php?myCompany='+ $('#myCompany').val();
 });
 
 //추가 선택 이벤트

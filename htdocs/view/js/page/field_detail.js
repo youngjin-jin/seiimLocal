@@ -6,7 +6,7 @@ $('#qr_btn').on('click', function () {
 
 //QR인증 선택 이벤트
 $('#qr_btn2').on('click', function () {
-	location.href = 'qrscan.php';
+	location.href = 'qrscan.php?myCompany='+ $('#myCompany').val();
 });
 
 
